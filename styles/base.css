@@ -38,6 +38,8 @@ nav {
 }
 
 nav a {
+    display: block;
+    padding: 8px;
     color: #fff;
     margin: 0 10px;
     text-decoration: none;
