@@ -1,0 +1,37 @@
+/* Medium view - two columns, third card larger */
+@media (min-width: 600px) and (max-width: 799px) { 
+    main {
+        grid-template-columns: 1fr 1fr; 
+        gap: 30px;
+    }
+
+    main .card:nth-child(3) {
+        grid-column: 1 / -1; 
+    }
+
+    .card:nth-child(3) h3 {
+        font-size: 1.5em; 
+    }
+
+    .card p, a, h4 {
+        font-size: larger;
+    }
+}
+
+/* Larger view - three columns */
+@media (min-width: 800px) { 
+    main {
+        grid-template-columns: repeat(3, 1fr); 
+        max-width: 1200px;
+        gap: 50px;
+    }
+
+    .card {
+        grid-column: auto; 
+        
+    }
+
+    .card p, a, h4 {
+        font-size: larger;
+    }
+}
