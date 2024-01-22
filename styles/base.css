@@ -101,7 +101,11 @@ when the button is clicked - the open class is toggle (added/removed) and accoun
 }
 
 .active::before {
-	content: "◽️ ";
+	content: "| ";
+  
+}
+.active::after {
+	content: " |";
   
 }
 
