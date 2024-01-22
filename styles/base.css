@@ -31,26 +31,90 @@ header img {
 
 
 /* Navigation Bar Styling */
+
 nav {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background: #444;
-    color: #fff;
-    text-align: center;
-    padding: 10px 4rem;
-}
-
-nav a {
+	max-width: 100%;
+	margin: 0px auto;
+    padding: 0px;
     
-    padding: 8px;
-    color: #fff;
-    margin: 10px;
-    text-decoration: none;
 }
 
-nav a:hover {
-    background-color: #555;
+
+/* small view navigation */
+#menu {
+	font-size: 1.5rem;
+	border: 1px solid rgba(0,0,0,.3);
+	padding: 3px 7px 6px;
+	background-color: #eee;
+	color: #000;
+ 	position: fixed;
+	top: 0;
+	right: 0;
+}
+
+#menu::before {
+	content: "☰";
+}
+
+#menu.open::before {
+	content: "✖️";
+}
+
+.navigation {
+	display: flex;
+	flex-direction: column;
+	list-style: none;
+	background-color: #444;
+	color: #fff;
+    padding: 0px;
+    margin: 0px;
+
+}
+.navigation li {
+	display: none;
+}
+.navigation li a {
+	display: block;
+	padding: 1rem ;
+	text-align: center;
+	text-decoration: none;
+	color: #fff;
+}
+.navigation li a:hover {
+	background-color: #555;
+	color: #d8d7d7;
+	font-weight: 700;
+    padding-left: 0px;
+    
+   
+}
+
+
+/* 
+when the button is clicked - the open class is toggle (added/removed) and accounted for here */
+.open li {
+	display: block;
+	width: 100%;
+}
+.open li a {
+	display: block;
+}
+
+.active::before {
+	content: "◽️ ";
+  
+}
+
+
+
+
+
+.navigation li a.active {
+    font-weight: bold;
+    
+}
+.navigation a {
+    padding-left: 0;
 }
 
 
@@ -123,7 +187,17 @@ main h2 {
 }
 
 
+.google-map {
+    width: 100%;
+    max-width: 800px; 
+    height: 450px; 
+    margin: 0px 10px 20px 10px; 
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 
+}
 
 
 
