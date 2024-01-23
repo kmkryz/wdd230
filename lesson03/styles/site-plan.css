@@ -8,14 +8,14 @@
 body {
     font-family: 'Raleway', sans-serif;
     line-height: 1.6;
-    color: #353535;
-    background-color: #353535;
+    color: #020202;
+    background-color: #E4EBFB;
     padding: 20px;
 }
 
 header {
-    background:#E4EBFB;
-    color: 353535;
+    background:#fffaff;
+    color: #353535;
     padding: 20px 0;
     text-align: center;
 }
@@ -33,7 +33,7 @@ section {
 }
 
 section h2 {
-    color: #353535;
+    color: #051DE9;
     margin-bottom: 10px;
 }
 
@@ -87,7 +87,7 @@ img {
 footer {
     text-align: center;
     padding: 20px 0;
-    background: #333;
+    background: #E4EBFB;
     color: #fff;
 }
 
