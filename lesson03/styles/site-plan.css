@@ -1,0 +1,106 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+    line-height: 1.6;
+    color: #353535;
+    background-color: #E4EBFB;
+    padding: 20px;
+}
+
+header {
+    background:#E4EBFB;
+    color: 353535;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+section {
+    background: #fffaff;
+    margin: 20px 0;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+section h2 {
+    color: #353535;
+    margin-bottom: 10px;
+}
+
+section p, section ul {
+    margin-bottom: 15px;
+}
+
+section ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+/* Style for Images */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto 20px auto; /* Center image and add space below */
+    border: 1px solid #ddd; /* Optional: adds a light border around the image */
+    border-radius: 4px; /* Optional: rounds the corners of the image */
+}
+
+
+
+.color-palette {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 10px;
+}
+
+.color-box {
+    width: 50px; /* Width of the box */
+    height: 50px; /* Height of the box */
+    border: 1px solid #ddd; /* Border to show box clearly if color is light */
+}
+
+#primary-color {
+    background-color:#E4EBFB;
+
+}
+
+#secondary-color {
+    background-color:#353535;
+}
+
+#tertiary-color {
+    background-color:#051DE9;
+}
+
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background: #333;
+    color: #fff;
+}
+
+@media screen and (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+
+    header, section, footer {
+        padding: 15px;
+    }
+
+    img {
+        width: 100%;
+    }
+}
