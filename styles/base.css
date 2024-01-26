@@ -176,6 +176,7 @@ main h2 {
     counter-increment: list-counter; 
     margin-bottom: 5px; 
     margin-left: 20px;
+    padding-right: 5px;
 }
 
 .card ul li:before {
@@ -189,6 +190,22 @@ main h2 {
     margin-left: auto;
     margin-right: auto;
 }
+
+
+
+
+a:active,
+a:link,
+a:visited {
+    text-decoration: none;
+	color: rgb(0, 105, 0);
+}
+
+.card a:hover {
+    color: #333;
+    font-weight: bold;
+}
+
 
 
 .google-map {
