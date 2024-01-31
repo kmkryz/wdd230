@@ -59,12 +59,12 @@ header img {
 
 .slider {
     background-color: #ccc;
-    bottom: 0;
+    bottom: 0%;
     cursor: pointer;
     left: 0%;
     position: absolute;
     right: 0%;
-    top: 0;
+    top: 0%;
     transition: .4s;
 }
 
@@ -132,7 +132,7 @@ input:checked + .slider:before {
 	display: flex;
     overflow: hidden;
     position: absolute;
-    top: 135px;
+    top: 235px;
     width: 100%;
     z-index: 1; 
 	flex-direction: column;
@@ -162,6 +162,8 @@ input:checked + .slider:before {
     
    
 }
+
+
 
 
 
@@ -223,7 +225,7 @@ when the button is clicked - the open class is toggle (added/removed) and accoun
     position: absolute;
     color: white;
 	background-color: rgba(0, 0, 0, 0.5); 
-    top: 50%; 
+    top: 70%; 
     left: 65%; 
     transform: translate(-50%, -50%);
     padding: 5px; 
@@ -242,6 +244,7 @@ button {
     background-color: #E4EBFB; 
     color: #353535;
     padding: 10px 20px; 
+    margin-bottom: 15px;
     font-size: 0.8em; 
     border: none;
     cursor: pointer;
@@ -514,7 +517,35 @@ footer {
 
 
 
+/* media queries for small small screens */
 
 
 
+@media screen and (min-width: 375px) {
+    .hero-text {
+        top: 400px;
+        font-size: smaller;
+    }
 
+    button {
+        font-size: smaller;
+    }
+}
+
+@media screen and (min-width: 450px) {
+
+    .navigation {
+        top: 175px;
+        
+    }
+
+
+}
+
+@media screen and (min-width: 670px) {
+
+    .navigation {
+        top: 125px;
+    }
+
+}

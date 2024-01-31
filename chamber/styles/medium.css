@@ -14,13 +14,14 @@
 
    .navigation {
     flex-direction: row ;
-
+    top: 135px;
    }
 
 
    .navigation li {
     display: block;
     flex: 1 1 100%;
+
 }
     
 

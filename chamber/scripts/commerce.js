@@ -37,6 +37,26 @@ hamButton.addEventListener('click', () => {
 
 
 
+
+let slideIndex = 0;
+showSlides();
+
+function showSlides() {
+    let i;
+    let slides = document.getElementsByClassName("slide");
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";  
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {slideIndex = 1}    
+    slides[slideIndex-1].style.display = "block";  
+    setTimeout(showSlides, 6000); // Change image every 2 seconds
+}
+
+
+
+
+//Code for dark mode and styling for elements//
 document.getElementById('checkbox').addEventListener('change', function(event) {
     if (event.target.checked) {
 
@@ -64,11 +84,14 @@ document.getElementById('checkbox').addEventListener('change', function(event) {
 
         joinDarkButton.addEventListener('mouseover', function() {
             this.style.backgroundColor = '#363636'; //hover color
+
+
         });
 
         // Event listener for mouseout - revert to original
         joinDarkButton.addEventListener('mouseout', function() {
-            this.style.backgroundColor = '#242424"'; // Original color
+            this.style.backgroundColor = '#242424'; // Original color
+            
         });
 
         document.querySelectorAll('.event-box').forEach(function(box) {
@@ -135,20 +158,7 @@ document.getElementById('lastModified').textContent = `Last Updated: ${document.
 
 
 
-let slideIndex = 0;
-showSlides();
 
-function showSlides() {
-    let i;
-    let slides = document.getElementsByClassName("slide");
-    for (i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";  
-    }
-    slideIndex++;
-    if (slideIndex > slides.length) {slideIndex = 1}    
-    slides[slideIndex-1].style.display = "block";  
-    setTimeout(showSlides, 6000); // Change image every 2 seconds
-}
 
 
 
