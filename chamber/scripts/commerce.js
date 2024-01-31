@@ -26,10 +26,6 @@ document.addEventListener("DOMContentLoaded", function() {
 
 
 
-document.getElementById('currentYear').textContent = new Date().getFullYear();
-
-document.getElementById('lastModified').textContent = `Last Updated: ${document.lastModified}`;
-
 const hamButton = document.querySelector('#menu');
 const navigation = document.querySelector('.navigation');
 
@@ -38,6 +34,105 @@ hamButton.addEventListener('click', () => {
 	navigation.classList.toggle('open');
 	hamButton.classList.toggle('open');
 });
+
+
+
+document.getElementById('checkbox').addEventListener('change', function(event) {
+    if (event.target.checked) {
+
+        const joinDarkButton = document.querySelector('#join');
+        
+        // Apply dark mode styles
+        document.body.style.backgroundColor = "#121212";
+        document.body.style.color = "#e0e0e0";
+
+
+        document.querySelector('header').style.backgroundColor = "#242424";
+        document.querySelector('header').style.color = "#E4EBFB";
+        document.querySelector('#join').style.backgroundColor = "#242424";
+        document.querySelector('#join').style.color = "#e0e0e0";
+        document.querySelector('.slideshow-card').style.backgroundColor= "#c0bcbc"
+        document.querySelector('.text-box').style.backgroundColor= "#121212";
+        document.querySelector('.text-box').style.color= "#E4EBFB";
+        document.querySelector('.event-section').style.backgroundColor= "#c0bcbc"
+        document.querySelector('.member-slideshow').style.backgroundColor= "#c0bcbc"
+        document.querySelector('.map-weather-container').style.backgroundColor= "#c0bcbc"
+        document.querySelector('.weather-card').style.backgroundColor= "#121212";
+        document.querySelector('.weather-card').style.color= "#E4EBFB";
+
+
+
+        joinDarkButton.addEventListener('mouseover', function() {
+            this.style.backgroundColor = '#363636'; //hover color
+        });
+
+        // Event listener for mouseout - revert to original
+        joinDarkButton.addEventListener('mouseout', function() {
+            this.style.backgroundColor = '#242424"'; // Original color
+        });
+
+        document.querySelectorAll('.event-box').forEach(function(box) {
+            box.style.backgroundColor = "#121212";
+            box.style.color = "#E4EBFB";
+        });
+        
+        document.querySelectorAll('.member-box').forEach(function(box) {
+            box.style.backgroundColor = "#121212";
+            box.style.color = "#E4EBFB";
+        });
+
+
+        
+    } else {
+
+        const joinLightButton = document.querySelector('#join');
+        
+        // Revert to light mode styles
+        document.body.style.backgroundColor = "#E4EBFB";
+        document.body.style.color = "#353535";
+
+        // Revert styles for specific elements
+        document.querySelector('header').style.backgroundColor = "#E4EBFB";
+        document.querySelector('header').style.color = "#353535";
+        document.querySelector('#join').style.backgroundColor = "#E4EBFB";
+        document.querySelector('#join').style.color = "#353535";
+        document.querySelector('.slideshow-card').style.backgroundColor= "#f2f2f2"
+        document.querySelector('.text-box').style.backgroundColor= "#f8f8f8";
+        document.querySelector('.text-box').style.color= "#353535";
+        document.querySelector('.event-section').style.backgroundColor= "#f2f2f2"
+        document.querySelector('.member-slideshow').style.backgroundColor= "#f2f2f2"
+        document.querySelector('.map-weather-container').style.backgroundColor= "#f2f2f2"
+        document.querySelector('.weather-card').style.backgroundColor= "#f8f8f8";
+        document.querySelector('.weather-card').style.color= "#353535";
+
+        joinLightButton.addEventListener('mouseover', function() {
+            this.style.backgroundColor = '#cfdcf9'; //hover color
+        });
+
+        // Event listener for mouseout - revert to original
+        joinLightButton.addEventListener('mouseout', function() {
+            this.style.backgroundColor = '#E4EBFB'; // Original color
+        });
+    
+
+        document.querySelectorAll('.event-box').forEach(function(box) {
+            box.style.backgroundColor = "#f8f8f8";
+            box.style.color = "#353535";
+        });
+        
+        document.querySelectorAll('.member-box').forEach(function(box) {
+            box.style.backgroundColor = "#f8f8f8";
+            box.style.color = "#353535";
+        });
+    }
+});
+
+
+document.getElementById('currentYear').textContent = new Date().getFullYear();
+
+document.getElementById('lastModified').textContent = `Last Updated: ${document.lastModified}`;
+
+
 
 
 let slideIndex = 0;
