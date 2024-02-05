@@ -61,6 +61,11 @@
         width: 50%;
     }
 
+
+
+    .member-box {
+        height: 400px;
+    }
     .google-map {
         margin: 0px auto 20px auto
     }
