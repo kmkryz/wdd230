@@ -102,6 +102,11 @@ document.getElementById('checkbox').addEventListener('change', function(event) {
         document.querySelectorAll('.member-box').forEach(function(box) {
             box.style.backgroundColor = "#121212";
             box.style.color = "#E4EBFB";
+
+            box.querySelectorAll('a').forEach(function(link) {
+               link.style.color = "#f5fd74";
+    });
+
         });
 
 
