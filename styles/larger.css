@@ -38,6 +38,19 @@
         margin-right: 40px;
     }
 
+    .herolabel {
+        top: 30px;
+        right: 30px;
+        padding: 1.5rem;
+    }
+
+    .herolabel p {
+        margin: 0;
+        color: #333;
+        padding: .25rem;
+        font-weight: 700;
+        font-size: 1.5rem;
+    }
 
     .google-map {
         margin: 0px auto 20px auto
