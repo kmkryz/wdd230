@@ -19,7 +19,7 @@
 </head>
 <body>
     <header>
-        <img src="images/Trumbull.logo.png" alt="Town Logo" width="200" height="200">
+        <img src="images/Trumbull.logo.webp" alt="Town Logo" width="200" height="200">
         <h1>Trumbull Chamber of Commerce</h1>
 
         <div class="theme-switch-wrapper">
@@ -39,7 +39,14 @@
         </ul>
     </nav>
         <div class="hero-container">
-            <img src="images/compressed-imgs/hero-lake-1.png" alt="Hero Image" class="hero-image" width="500" height="500">
+            <div class="hero-img">
+                <picture>
+                    <source media="(max-width: 480px)" srcset="images/w6-hero-small-copy.webp">
+                    <source media="(max-width: 980px)" srcset="images/w6-hero-medium.webp">
+                    <img src="images/w6-hero-large.webp" alt="Week 6 Hero Image" width="1200" height="520">
+                </picture>
+            </div>
+            <!-- <img src="images/compressed-imgs/hero-lake-1.webp" alt="Hero Image" class="hero-image" width="500" height="500"> -->
             <div class="hero-text">
                 <h2>The support you deserve.</h2>
                 <p>Get started today</p>
@@ -53,13 +60,13 @@
         <div class="content-section">
             <div class="slideshow-container">
                 <div class="slide fade">
-                    <img src="images/compressed-imgs/chamber1.jpg" alt="Image 1" width="400" height="400">
+                    <img src="images/chamber1.webp" alt="Image 1" width="400" height="400">
                 </div>
                 <div class="slide fade">
-                    <img src="images/compressed-imgs/chamber2.jpg" alt="Image 2" width="400" height="400">
+                    <img src="images/chamber2.webp" alt="Image 2" width="400" height="400">
                 </div>
                 <div class="slide fade">
-                    <img src="images/compressed-imgs/chamber3.jpg" alt="Image 3" width="400" height="400">
+                    <img src="images/chamber3.webp" alt="Image 3" width="400" height="400">
                 </div>
                 <!-- You can add more slides here -->
             </div>
@@ -186,7 +193,7 @@
         <section class="weather-card">
             <h2>Weather in Trumbull, CT</h2>
             <div class="weather-info">
-                <img src="images/weather-icon.png" alt="Weather Icon" class="weather-icon" width="60" height="50">
+                <img src="images/weather-icon.webp" alt="Weather Icon" class="weather-icon" width="60" height="50">
                 <p class="temperature">72°F</p>
                 <p class="weather-condition">Partly Cloudy</p>
                 <p class="other-info">Humidity: 60% | Wind: 5 mph</p>
@@ -197,16 +204,16 @@
     <footer>
 
         <div class="footer-top">
-            <img src="images/Trumbull.logo.png" alt="Logo" class="footer-logo">
+            <img src="images/Trumbull.logo.webp" alt="Logo" class="footer-logo">
             <p class="footer-info">Trumbull Chamber of Commerce</p>
             <p class="footer-info">346 Main Street, Trumbull, Connecticut</p>
             <p class="footer-info">Email: tbullcomm@yahoo.com </p>
             <div class="social-media-links">
                 <a href="facebook_link" target="_blank">
-                    <img src="images/fb-icon.png" alt="Facebook" class="social-icon" >
+                    <img src="images/fb-icon.webp" alt="Facebook" class="social-icon" >
                 </a>
                 <a href="insta_link" target="_blank">
-                    <img src="images/insta-icon.png" alt="Instagram" class="social-icon">
+                    <img src="images/insta-icon.webp" alt="Instagram" class="social-icon">
                 </a>
             </div>
         </div>
