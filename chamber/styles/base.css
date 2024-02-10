@@ -212,11 +212,14 @@ when the button is clicked - the open class is toggle (added/removed) and accoun
     position: relative;
     text-align: center;
     margin-top: -20px;
+    
 }
 
 .hero-image {
+    max-width: 1480px;
     width: 100%;
     height: auto;
+    object-fit: contain;
 }
 
 .hero-text {
@@ -526,10 +529,12 @@ footer {
 
 
 @media screen and (min-width: 375px) {
-    .hero-text {
-        top: 400px;
-        font-size: smaller;
+    .hero-text h2 {
+
+        font-size: .9em;
     }
+
+
 
     button {
         font-size: smaller;
@@ -539,6 +544,10 @@ footer {
 }
 
 @media screen and (min-width: 450px) {
+    .hero-text h2 {
+
+        font-size: 1.4em;
+    }
 
     .navigation {
         top: 175px;
@@ -554,5 +563,5 @@ footer {
         top: 125px;
     }
 
-
 }
+

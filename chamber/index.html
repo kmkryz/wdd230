@@ -39,14 +39,19 @@
         </ul>
     </nav>
         <div class="hero-container">
+            <!-- week 6 hero (400, 267) (1000, 667) (1400, 937)-->
+
             <div class="hero-img">
                 <picture>
-                    <source media="(max-width: 480px)" srcset="images/w6-hero-small-copy.webp">
-                    <source media="(max-width: 980px)" srcset="images/w6-hero-medium.webp">
-                    <img src="images/w6-hero-large.webp" alt="Week 6 Hero Image" width="1200" height="633">
+                    <source media="(max-width: 480px)" srcset="images/small.webp"> 
+                    <source media="(max-width: 980px)" srcset="images/medium.webp"> 
+                    <img src="images/large.webp" alt="Week 6 Hero Image" width="1480" height="987"> 
                 </picture>
             </div>
-            <!-- <img src="images/compressed-imgs/hero-lake-1.webp" alt="Hero Image" class="hero-image" width="500" height="500"> -->
+
+        <!-- <div class="hero-img">
+            <img src="images/compressed-imgs/hero-lake-1.webp" alt="Hero Image" class="hero-image" width="500" height="500">
+        </div> -->
             <div class="hero-text">
                 <h2>The support you deserve.</h2>
                 <p>Get started today</p>
@@ -194,9 +199,10 @@
             <h2>Weather in Trumbull, CT</h2>
             <div class="weather-info">
                 <img src="images/weather-icon.webp" alt="Weather Icon" class="weather-icon" width="60" height="50">
-                <p class="temperature">72°F</p>
                 <p class="weather-condition">Partly Cloudy</p>
-                <p class="other-info">Humidity: 60% | Wind: 5 mph</p>
+                <p>Current Temperature: <span id="current-temp">40</span>°F</p>
+                <p>Wind Speed: <span id="wind-speed">5</span> mph</p>
+                <p>Wind Chill: <span id="wind-chill">N/A</span></p>
             </div>
         </section>
     </div>
@@ -224,6 +230,7 @@
 
     </footer>
     <script src="scripts/commerce.js"></script>
+    <script src="scripts/windchill.js"></script>
 </body>
 </html>
 
