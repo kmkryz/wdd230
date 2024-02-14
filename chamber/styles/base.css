@@ -227,7 +227,7 @@ when the button is clicked - the open class is toggle (added/removed) and accoun
     color: white;
 	background-color: rgba(0, 0, 0, 0.5); 
     top: 70%; 
-    left: 65%; 
+    left: 35%; 
     transform: translate(-50%, -50%);
     padding: 5px; 
 
@@ -529,8 +529,11 @@ footer {
 
 
 @media screen and (min-width: 375px) {
+    .hero-text {
+        left: 45%;
+    }
     .hero-text h2 {
-
+    
         font-size: .9em;
     }
 
@@ -544,6 +547,9 @@ footer {
 }
 
 @media screen and (min-width: 450px) {
+    .hero-text {
+        left: 55%;
+    }
     .hero-text h2 {
 
         font-size: 1.4em;
