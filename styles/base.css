@@ -220,6 +220,7 @@ main h2 {
 
 
 .card p {
+    padding: 15px;
     text-align: center; 
     margin-left: auto;
     margin-right: auto;
