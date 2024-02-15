@@ -172,7 +172,7 @@ main h2 {
 } 
 
 
-.herolabel {
+#herolabel {
 	margin: 0;
     color: #333;
 	padding: .05rem;
