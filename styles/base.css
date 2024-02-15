@@ -141,8 +141,6 @@ main {
 
 main h2 {
     text-align: center;
-    border-bottom: .5px solid #000; 
-    padding-bottom: 10px; 
     margin-bottom: 20px; 
 
 }
@@ -159,26 +157,29 @@ main h2 {
     object-fit: cover;
 }
 
- .herolabel {
+ #herolabel {
     position: absolute;
     top: 20px;
     right: 15px;
+    color: #333;
     background: rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(10px);
     border: 1px solid rgba(255, 255, 255, 0.25);
-    padding: .5rem;
+    padding: .75rem;
     box-shadow: 0 0 1rem rgba(51, 51, 51, 0.5);
     opacity: 0.95;
 } 
 
-
-#herolabel {
-	margin: 0;
-    color: #333;
-	padding: .05rem;
-	font-weight: 700;
-	font-size: 1rem;
+#herolabel h2 {
+    margin: 0;
+    font-size: 1rem;
 }
+
+#pagelabel {
+    border-bottom: .5px solid #000; 
+    padding-bottom: 10px; 
+}
+
 
 
 /* Card Section Styling */
@@ -271,7 +272,7 @@ footer {
 
 
 @media screen and (max-width: 400px) {
-    .herolabel {
+    #herolabel {
         position: absolute;
         top: 10px;
         right: 10px;
@@ -280,9 +281,8 @@ footer {
     } 
     
     
-    .herolabel p {
+    #herolabel h2 {
         margin: 0;
-        padding: .05rem;
         font-size: .5rem;
     }
 }

@@ -38,13 +38,13 @@
         margin-right: 40px;
     }
 
-    .herolabel {
+    #herolabel {
         top: 30px;
         right: 30px;
         padding: 1.5rem;
     }
 
-    .herolabel p {
+    #herolabel h2 {
         margin: 0;
         color: #333;
         padding: .25rem;
