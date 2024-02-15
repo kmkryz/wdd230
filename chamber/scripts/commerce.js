@@ -1,4 +1,15 @@
 
+const hamButton = document.querySelector('#menu');
+const navigation = document.querySelector('.navigation');
+
+
+hamButton.addEventListener('click', () => {
+	navigation.classList.toggle('open');
+	hamButton.classList.toggle('open');
+});
+
+
+
 document.addEventListener("DOMContentLoaded", function() {
     let currentIndex = 0;
     const slides = document.querySelectorAll('.member-slideshow .mem-slide');
@@ -26,17 +37,6 @@ document.addEventListener("DOMContentLoaded", function() {
 
 
 
-const hamButton = document.querySelector('#menu');
-const navigation = document.querySelector('.navigation');
-
-
-hamButton.addEventListener('click', () => {
-	navigation.classList.toggle('open');
-	hamButton.classList.toggle('open');
-});
-
-
-
 
 let slideIndex = 0;
 showSlides();
@@ -52,6 +52,7 @@ function showSlides() {
     slides[slideIndex-1].style.display = "block";  
     setTimeout(showSlides, 6000); // Change image every 2 seconds
 }
+
 
 
 
@@ -154,6 +155,46 @@ document.getElementById('checkbox').addEventListener('change', function(event) {
         });
     }
 });
+
+
+
+
+
+
+
+
+
+// week 7
+
+// document.addEventListener("DOMContentLoaded", function() {
+//     const visitMessage = document.getElementById('visitMessage');
+//     const lastVisit = localStorage.getItem('lastVisit');
+//     const now = new Date();
+    
+//     if (lastVisit) {
+//         const lastVisitDate = new Date(lastVisit);
+//         const diffTime = Math.abs(now - lastVisitDate);
+//         const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24));
+        
+//         if (diffDays < 1) {
+//             visitMessage.textContent = "Back so soon! Awesome!";
+//         } else {
+//             let dayWord = diffDays === 1 ? "day" : "days";
+//             visitMessage.textContent = `You last visited ${diffDays} ${dayWord} ago.`;
+//         }
+//     } else {
+//         visitMessage.textContent = "Welcome! Let us know if you have any questions.";
+//     }
+    
+//     localStorage.setItem('lastVisit', now);
+    
+
+// });
+
+
+
+
+
 
 
 document.getElementById('currentYear').textContent = new Date().getFullYear();
