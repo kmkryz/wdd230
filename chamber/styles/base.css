@@ -211,9 +211,9 @@ when the button is clicked - the open class is toggle (added/removed) and accoun
 
 
 .container {
-    margin-top: 70px;
+    margin-top: 50px;
     display: grid;
-    grid-template-columns: 1fr 3fr;
+    grid-template-columns: 1fr ;
     gap: 30px;
 }
 
@@ -222,6 +222,7 @@ when the button is clicked - the open class is toggle (added/removed) and accoun
     margin-left: 20px;
     width: auto;
     background-color: #f4f4f4;
+    margin-left: 0;
 }
 
 .main-content {
@@ -229,8 +230,15 @@ when the button is clicked - the open class is toggle (added/removed) and accoun
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: auto;
+    margin-left: 0;
 
 }
+
+
+
+
+
 
 .main-content img {
     margin-top: 0;
@@ -259,7 +267,7 @@ when the button is clicked - the open class is toggle (added/removed) and accoun
 
 
 
-#visitMessage, .calendar-section, .demographics-section, .heading-section, .calendar-section, .event-section {
+#visitMessage, .calendar-section, .demographics-section, .heading-section, .calendar-section, .upcoming-section {
     background-color: #f2f2f2; 
     font-size: small;
     padding: 20px;
