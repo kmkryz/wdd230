@@ -40,6 +40,21 @@
     }
 
 
+
+
+
+    #visitMessage, .calendar-section, .demographics-section, .heading-section, .calendar-section, .event-section {
+        background-color: #f2f2f2; 
+        font-size: larger;
+        padding: 40px;
+ 
+    }
+
+    #img-label {
+        font-size: larger;
+    }
+
+
     .hero-text {
         top: 50%;
         left: 50%;
