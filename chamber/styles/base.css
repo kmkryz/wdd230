@@ -214,7 +214,7 @@ when the button is clicked - the open class is toggle (added/removed) and accoun
     margin-top: 70px;
     display: grid;
     grid-template-columns: 1fr 3fr;
-    gap: auto;
+    gap: 30px;
 }
 
 .sidebar {
@@ -243,7 +243,7 @@ when the button is clicked - the open class is toggle (added/removed) and accoun
 
 }
 
-#img-label {
+.img-label {
     margin-bottom: 200px;
 }
 
