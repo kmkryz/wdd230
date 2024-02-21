@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Page - WDD 230 - Web Frontend Development</title>
+    <meta name="author" content="Kaitlyn Kryzanski">
+    <meta name="description" content="The official form page for the WDD 230 Course.">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" type="text/css" href="styles/form.css">
+    <link rel="stylesheet" type="text/css" href="styles/largerform.css">
+    <link rel="icon" href="favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+    <meta property="og:title" content="Form Page - Kaitlyn Kryzanski Web Frontend Development">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.linkedin.com%2Fin%2Fkaitlyn-marie-kryzanski-9398041b1&psig=AOvVaw0ALQFopvuytUp7Z-M0ZXPN&ust=1707585140507000&source=images&cd=vfe&opi=89978449&ved=0CBMQjRxqFwoTCLjBxr_gnoQDFQAAAAAdAAAAABAE">
+    <meta property="og:url" content="https://kmkryz.github.io/wdd230/">
+    
+</head>
+<body>
+    <header>
+        <img src="images/profile-picture-medium.webp" alt="Profile Picture" width="100" height="200">
+        <h1>Kaitlyn Kryzanski</h1>
+    </header>
+    <nav>
+        <button id="menu">☰</button>
+        <ul class="navigation">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#">Form Page</a></li>
+            <li><a href="lesson03/chamber-site-plan.html">Site Plan</a></li>
+            <li><a href="chamber/index.html">Chamber</a></li>
+            <li><a href="https://www.byui.edu" target="_blank">BYU-Idaho</a></li>
+            <li><a href="https://www.churchofjesuschrist.org/study/scriptures/ot/num/22?lang=eng" target="_blank">Scripture</a></li>
+        </ul>
+    </nav>
+    <main>
+        <div id="passwordMessage"></div>
+        <form id="userForm" method="get" action="record.html">
+            <fieldset>
+                <legend>User Information: </legend>
+                <label class="top">Username* <input type="text" id="username" name="username" required></label>
+                <label class="top">Password* <input type="password" id="password" name="password" pattern="[A-Za-z0-9]{8,}" required></label>
+                <label class="top">Confirm Password* <input type="password" id="password2" name="password2" required></label>
+                <label class="top">Email* <input type="email" id="email" name="email" pattern="[a-zA-Z0-9._%+-]+@byui\.edu$" title="Please enter a valid email address" placeholder="someone@byui.edu" required></label>
+
+            </fieldset>
+
+            <fieldset>
+                <legend>Page Rating: </legend>
+                <label class="rating">
+                    <input type="range" id="pageRating" name="pageRating" min="1" max="10" step="1" value="5" oninput="updateRatingValue(this.value)" onchange="updateRatingValue(this.value)">
+                    <span id="ratingValue">5</span>
+                </label>
+            </fieldset>
+
+
+
+            <input type="submit" value="Create Account" class="submitBtn">
+
+
+
+        </form>
+
+
+
+
+
+
+
+
+
+    <footer>
+        <p> &copy; <span id="currentYear"></span> 💠 Kaitlyn Kryzanski 💠 Florida, USA <span> 🇺🇸 </span></p>
+        <p id="lastModified"></p>
+
+    </footer>
+    <script src="scripts/form.js"></script>
+</body>
+</html>
+

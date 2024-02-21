@@ -65,7 +65,7 @@
 
 
 
-    #visitMessage, .calendar-section, .demographics-section, .heading-section, .calendar-section, .event-section {
+    #visitMessage, .calendar-section, .demographics-section, .heading-section, .calendar-section, .upcoming-section {
         background-color: #f2f2f2; 
         font-size: larger;
         padding: 40px;

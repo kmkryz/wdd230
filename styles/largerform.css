@@ -1,0 +1,28 @@
+@media screen and (min-width: 600px) {
+
+    nav {
+        
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+
+
+   #menu {
+    display: none;
+   }
+
+   .navigation {
+    flex-direction: row ;
+
+   }
+
+
+   .navigation li {
+    display: block;
+    flex: 1 1 100%;
+}
+    
+
+
+}
