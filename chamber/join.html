@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="wclassth=device-wclassth, initial-scale=1.0">
+    <title>Home Page - Trumbull Chamber of Commerce</title>
+    <meta name="author" content="Kaitlyn Kryzanski">
+    <meta name="description" content="Home Page for the Chamber of Commerce of the town of Trumbull, Connecticut">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" type="text/css" href="styles/base.css">
+    <link rel="stylesheet" type="text/css" href="styles/medium.css">
+    <link rel="stylesheet" type="text/css" href="styles/larger.css">
+    <link rel="icon" href="images/favicon_io/favicon.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+    <meta property="og:title" content="Trumbull Chamber of Commerce">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://kmkryz.github.io/wdd230/chamber">
+    <meta property="og:image" content="https://res.cloudinary.com/luxuryp/images/f_auto,q_auto/sjamhuwc8kzagein8tyt/trumbull">
+</head>
+<body>
+    <header>
+        <img src="images/Trumbull.logo.webp" alt="Town Logo" width="200" height="200">
+        <h1>Trumbull Chamber of Commerce</h1>
+        <div class="theme-switch-wrapper">
+            <label class="theme-switch" for="checkbox">
+                <input type="checkbox" id="checkbox">
+                    <span class="slider round"></span>
+            </label>
+        </div>
+
+    </header>
+    <nav>
+        <button id="menu"></button>
+        <ul class="navigation">
+            <li><a href="#">Home</a></li>
+            <li><a href="discover.html">Discover</a></li>
+            <li><a href="">Directory</a></li>
+            <li><a href="" target="_blank">Join</a></li>
+        </ul>
+    </nav>
+    <h2 id="form-title">Chamber of Commerce Application</h2>
+    <main id="main-form">
+        <div id="join-container">
+        <form method="get" action="thanks.html">
+            <fieldset>
+                <legend>Applicant Information</legend>
+                <label class="top">First name* <input type="text" name="fname" id="fname" required></label>
+                <label class="top">Last name* <input type="text" name="lname" id="lname" required></label>
+                <label class="top">Title or Position* <input type="text" id="title" name="title" pattern="[A-Za-z\s\-]{7,}" required></label>
+                <label class="top">Email* <input type="email" name="email" id="email" placeholder="example@gmail.com" required></label>
+                <label class="top">Mobile Phone* <input type="tel" name="mphone" id="mphone" placeholder="1235551234" required></label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Membership Information</legend>
+                <label class="top">Business/organization name* <input type="text" name="bname" id="bname" required></label>
+                <div>Membership Selection:</div>
+                <label class="sbs"><input type="radio" name="membership" value="Non-profit Membership"> NP Membership - for non profit organizations (no fee)</label>
+                <label class="sbs"><input type="radio" name="membership" value="Bronze Membership"> Bronze Membership</label>
+                <label class="sbs"><input type="radio" name="membership" value="Silver Membership"> Silver Membership</label>
+                <label class="sbs"><input type="radio" name="membership" value="Gold Membership"> Gold Membership</label>
+                
+                <label class="top">Business/Organization's Description: <textarea id="businessDescription" name="businessDescription" rows="6" cols="70"></textarea></label>
+            
+                <input type="hidden" id="formLoadTime" name="formLoadTime">
+
+            </fieldset>
+
+
+            <input type="submit" value="Apply" class="submitBtn">
+
+        </form>
+
+        <div class="membership-benefits">
+            <h2>Membership Levels and Benefits</h2>
+            <div class="membership-level">
+                <h3>NP Membership</h3>
+                <p>Specifically tailored for non-profit organizations, this membership level is designed to support these entities by providing them with access to valuable resources and networking opportunities at no cost.</p>
+                <ul>
+                    <li>Access to networking events and community gatherings.</li>
+                    <li>Free or discounted access to workshops and seminars aimed at non-profit management and growth.</li>
+                    <li>Inclusion in the Chamber's non-profit directory.</li>
+                    <li>Opportunities for spotlight features in Chamber communications to highlight your non-profit's work and needs.</li>
+                </ul>
+            </div>
+            
+            <div class="membership-level">
+                <h3>Bronze Membership</h3>
+                <p>Ideal for small businesses or startups looking to gain visibility and make the most of networking opportunities.</p>
+                <ul>
+                    <li>Basic listing in the Chamber's online business directory.</li>
+                    <li>Access to members-only networking events.</li>
+                    <li>Discounted rates for business training sessions and workshops.</li>
+                    <li>Monthly newsletter featuring updates, opportunities, and advertising space.</li>
+                </ul>
+            </div>
+            
+            <div class="membership-level">
+                <h3>Silver Membership</h3>
+                <p>Designed for established businesses looking to expand their reach and influence within the community.</p>
+                <ul>
+                    <li>All the benefits of Bronze Membership.</li>
+                    <li>Enhanced listing in the Chamber's online business directory with priority over Bronze listings.</li>
+                    <li>Free advertising space in the Chamber's newsletter twice a year.</li>
+                    <li>Access to advanced training sessions and exclusive events.</li>
+                    <li>One spotlight position on the homepage annually to showcase your business.</li>
+                </ul>
+            </div>
+            
+            <div class="membership-level">
+                <h3>Gold Membership</h3>
+                <p>The premium level of membership, offering the highest level of visibility, access, and exclusivity, tailored for leaders and influencers in the business community.</p>
+                <ul>
+                    <li>All the benefits of Silver Membership.</li>
+                    <li>Top-tier listing in the Chamber's online business directory.</li>
+                    <li>Free advertising space in the Chamber's newsletter quarterly.</li>
+                    <li>Priority access to all Chamber events, including VIP events and roundtables.</li>
+                    <li>Quarterly spotlight positions on the homepage.</li>
+                    <li>Exclusive discounts for event sponsorships, offering significant visibility at Chamber events.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    </main>
+   
+    
+
+
+    <footer>
+
+        <div class="footer-top">
+            <img src="images/Trumbull.logo.webp" alt="Logo" class="footer-logo">
+            <p class="footer-info">Trumbull Chamber of Commerce</p>
+            <p class="footer-info">346 Main Street, Trumbull, Connecticut</p>
+            <p class="footer-info">Email: tbullcomm@yahoo.com </p>
+            <div class="social-media-links">
+                <a href="facebook_link" target="_blank">
+                    <img src="images/fb-icon.webp" alt="Facebook" class="social-icon" >
+                </a>
+                <a href="insta_link" target="_blank">
+                    <img src="images/insta-icon.webp" alt="Instagram" class="social-icon">
+                </a>
+            </div>
+        </div>
+
+        <p> &copy; <span class="currentYear"></span> | Kaitlyn Kryzanski | WDD230 Commerce Project </p>
+        <p class="lastModified"></p>
+
+
+    </footer>
+    <script src="scripts/join.js"></script>
+</body>
+</html>
+
