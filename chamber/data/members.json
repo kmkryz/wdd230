@@ -5,7 +5,7 @@
         "address": "458 Solar Way, Trumbull, CT 06611, USA",
         "phonenumber": "555-234-5678",
         "websiteurl": "https://evergreentechsolutions.com",
-        "img": "../images/directory-images/evergreen.webp",
+        "img": "https://raw.githubusercontent.com/kmkryz/wdd230/main/chamber/images/directory-images/Eco.webp",
         "membershiplevel": "bronze"
       },
       {
