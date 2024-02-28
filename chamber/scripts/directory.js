@@ -1,6 +1,27 @@
 const url = "https://kmkryz.github.io/wdd230/chamber/data/members.json";
 const cards = document.querySelector('#directory-cards');
 
+
+
+document.addEventListener('DOMContentLoaded', function() {
+    const directoryCards = document.getElementById('directory-cards');
+    const gridButton = document.getElementById('grid');
+    const listButton = document.getElementById('list');
+
+    directoryCards.classList.add('grid'); 
+
+    gridButton.addEventListener('click', function() {
+        directoryCards.classList.add('grid');
+        directoryCards.classList.remove('list');
+    });
+
+    listButton.addEventListener('click', function() {
+        directoryCards.classList.add('list');
+        directoryCards.classList.remove('grid');
+    });
+});
+
+
 async function getMemberData() {
     const response = await fetch(url);
     const data = await response.json();
