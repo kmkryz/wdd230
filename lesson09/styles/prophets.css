@@ -57,4 +57,5 @@ img {
 footer {
     text-align: center;
     color: var(--base);
+    margin: 30px;
 }
