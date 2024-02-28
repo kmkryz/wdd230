@@ -1,0 +1,145 @@
+{
+    "lessons": [
+        {
+        "lesson": "01:",
+        "links": [
+            {
+                "url": "https://kmkryz.github.io/wdd230/lesson01/holygrail.html",
+                "title": "Holy Grail"
+            }
+
+        ] 
+    },
+    {
+        "lesson": "02:",
+        "links": [
+            {
+                "url": "https://kmkryz.github.io/wdd230/lesson02/design.html",
+                "title": "Web Design Principles Activity"
+            },
+            {
+                "url": "https://kmkryz.github.io/wdd230/lesson01/media-query.html",
+                "title": "Media Query"
+            },
+            {
+                "url": "https://kmkryz.github.io/wdd230/lesson02/design-principles.html",
+                "title": "Design Principles Document"
+            }
+
+        ] 
+    },
+    {
+        "lesson": "03:",
+        "links": [
+            {
+                "url": "https://kmkryz.github.io/wdd230/images/combinator-exercises.png",
+                "title": "Combinator Exercises"
+            },
+            {
+                "url": "https://codepen.io/Kaitlyn-Kryzanski/pen/qBvjaVa",
+                "title": "Pseudo-elements CodePen"
+            },
+            {
+                "url": "https://codepen.io/Kaitlyn-Kryzanski/pen/KKEqgRY",
+                "title": "Responsive 'Hamburger' Menu"
+            }
+
+        ] 
+    },
+    {
+        "lesson": "04:",
+        "links": [
+            {
+                "url": "https://codepen.io/Kaitlyn-Kryzanski/pen/YzgEZyo",
+                "title": "Pseudo-classes CodePen"
+            }
+
+        ] 
+    },
+    {
+        "lesson": "05:",
+        "links": [
+            {
+                "url": "https://kmkryz.github.io/wdd230/lesson05/shopping-list.html",
+                "title": "Shopping List DOM Activity"
+            },
+            {
+                "url": "https://kmkryz.github.io/wdd230/lesson05/bom.html",
+                "title": "Book of Mormon Activity"
+            }
+
+        ] 
+    },
+    {
+        "lesson": "06:",
+        "links": [
+            {
+                "url": "https://kmkryz.github.io/wdd230/lesson06/images/reduced-landscape.webp",
+                "title": "WebP Image Format"
+            },
+            {
+                "url": "https://kmkryz.github.io/wdd230/lesson06/responsive-images.html",
+                "title": "Responsive Images"
+            }
+
+        ] 
+    },
+    {
+        "lesson": "07:",
+        "links": [
+            {
+                "url": "https://kmkryz.github.io/wdd230/lesson07/lazyload.html",
+                "title": "Native Lazy Loading of Images"
+            },
+            {
+                "url": "https://kmkryz.github.io/wdd230/lesson07/bom2.html",
+                "title": "JS localStorage (BOM)"
+            }
+
+        ] 
+    },
+    {
+        "lesson": "08:",
+        "links": [
+            {
+                "url": "https://kmkryz.github.io/wdd230/lesson08/tablebuild.html",
+                "title": "HTML Tables"
+            },
+            {
+                "url": "https://kmkryz.github.io/wdd230/lesson08/form-start/index.html",
+                "title": "HTML Forms"
+            }
+
+        ] 
+    },
+    {
+        "lesson": "09:",
+        "links": [
+            {
+                "url": "https://kmkryz.github.io/wdd230/lesson09/new-ward-members.json",
+                "title": "JSON"
+            },
+            {
+                "url": "https://kmkryz.github.io/wdd230/lesson09/prophets.html",
+                "title": "Prophets Fetch API"
+            }
+
+        ] 
+    },
+    {
+        "lesson": "10:",
+        "links": [
+            {
+                "url": "",
+                "title": ""
+            },
+            {
+                "url": "",
+                "title": ""
+            }
+
+        ] 
+    }
+
+    ]
+}
