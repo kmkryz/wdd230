@@ -5,56 +5,56 @@
         "address": "458 Solar Way, Trumbull, CT 06611, USA",
         "phonenumber": "555-234-5678",
         "websiteurl": "https://evergreentechsolutions.com",
-        "img": "https://raw.githubusercontent.com/kmkryz/wdd230/main/chamber/images/directory-images/Eco.webp",
-        "membershiplevel": "bronze"
+        "img": "https://raw.githubusercontent.com/kmkryz/wdd230/main/chamber/images/directory-images/evergreen.webp",
+        "membershiplevel": "bronze member"
       },
       {
         "name": "AquaPure Waters",
         "address": "672 Cascade Drive, Trumbull, CT 06611, USA",
         "phonenumber": "555-987-6543",
         "websiteurl": "https://aquapurewaters.com",
-        "img": "../images/directory-images/aquapure.webp",
-        "membershiplevel": "silver"
+        "img": "https://raw.githubusercontent.com/kmkryz/wdd230/main/chamber/images/directory-images/aquapure.webp",
+        "membershiplevel": "silver member"
       },
       {
         "name": "Leniits",
         "address": "88 Freight Lane, Trumbull, CT 06611, USA",
         "phonenumber": "555-456-7890",
         "websiteurl": "https://leniits.com",
-        "img": "../images/directory-images/leniits.webp",
-        "membershiplevel": "bronze"
+        "img": "https://raw.githubusercontent.com/kmkryz/wdd230/main/chamber/images/directory-images/leniits.webp",
+        "membershiplevel": "bronze member"
       },
       {
         "name": "Glow Beauty Essentials",
         "address": "334 Radiance Ave, Trumbull, CT 06611, USA",
         "phonenumber": " 555-321-0987",
         "websiteurl": "https://glowbeautyessentials.com",
-        "img": "../images/directory-images/glowbeauty.webp",
-        "membershiplevel": "silver"
+        "img": "https://raw.githubusercontent.com/kmkryz/wdd230/main/chamber/images/directory-images/glowbeauty.webp",
+        "membershiplevel": "silver member"
       },
       {
         "name": "InnovaTech Solutions",
         "address": "909 Innovation Drive, Trumbull, CT 06611, USA",
         "phonenumber": " 555-654-3210",
         "websiteurl": "https://innovatechsolutions.com",
-        "img": "../images/directory-images/Innova.webp",
-        "membershiplevel": "gold"
+        "img": "https://raw.githubusercontent.com/kmkryz/wdd230/main/chamber/images/directory-images/Innova.webp",
+        "membershiplevel": "gold member"
       },
       {
         "name": "EcoFriendly Packaging Co.",
         "address": "255 Green Street, Trumbull, CT 06611, USA",
         "phonenumber": "555-567-1234",
         "websiteurl": "https://ecofriendlypackaging.com",
-        "img": "../images/directory-images/Eco.webp",
-        "membershiplevel": "silver"
+        "img": "https://raw.githubusercontent.com/kmkryz/wdd230/main/chamber/images/directory-images/Eco.webp",
+        "membershiplevel": "silver member"
       },
       {
         "name": "NextGen Education",
         "address": "477 Learning Blvd, Trumbull, CT 06611, USA",
         "phonenumber": "555-789-0123",
         "websiteurl": "https://nextgeneducation.com",
-        "img": "../images/directory-images/Nextgen.webp",
-        "membershiplevel": "bronze"
+        "img": "https://raw.githubusercontent.com/kmkryz/wdd230/main/chamber/images/directory-images/Innova.webp",
+        "membershiplevel": "bronze member"
       }
    
     ]

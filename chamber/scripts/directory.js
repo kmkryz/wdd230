@@ -29,15 +29,16 @@ const displayMembers = (members) => {
         image.setAttribute('src', member.img);
         image.setAttribute('alt', `Photo of ${member.name}`)
         image.setAttribute('loading', 'lazy');
-        image.setAttribute('width', '340');
-        image.setAttribute('height', '440');
+        image.setAttribute('width', '100');
+        image.setAttribute('height', '100');
 
+        card.appendChild(image);
         card.appendChild(companyName)
         card.appendChild(address);
         card.appendChild(phoneNumber);
         card.appendChild(website);
         card.appendChild(memberLevel);
-        card.appendChild(image);
+
 
         cards.appendChild(card);
     })
