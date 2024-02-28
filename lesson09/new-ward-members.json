@@ -1,0 +1,42 @@
+{
+    "wardInformation": {
+    "familyName": "Johnson",
+    "moveInDate": "02-23-24",
+    "familyCount": 6,
+    "vistedByBishopric": true,
+    "familyMembers": [
+        {
+            "name": "Sally Johnson",
+            "gender": "female",
+            "birthday": "07-08-2006"
+
+        },
+        {
+            "name": "Colin Johnson",
+            "gender": "male",
+            "birthday": "05-15-2002"
+        },
+        {
+            "name": "Henry Johnson",
+            "gender": "male",
+            "birthday": "06-10-2000"
+        },
+        {
+            "name": "Jordan Johnson",
+            "gender": "female",
+            "birthday": "09-02-1998"
+        },
+        {
+            "name": "Susan Johnson",
+            "gender": "female",
+            "birthday": "01-01-1970"
+        },
+        {
+            "name": "David Johnson",
+            "gender": "male",
+            "birthday": "07-08-1968"
+        }
+    ]
+    }
+
+}
