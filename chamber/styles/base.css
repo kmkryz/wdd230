@@ -153,6 +153,7 @@ input:checked + .slider:before {
     padding: 0px;
     margin-top: 0;
 
+
 }
 .navigation li {
 	display: none;
@@ -797,16 +798,33 @@ input::placeholder {
 
 .directory-menu {
     margin-top: 80px;
+    display: grid;
 }
 
 
 .directory-menu > button {
-    margin: 20px 50px 0 250px;
-    background-color: rgba(0, 0, 0, 0.75);
+    margin: 10px 30%;
     color: #fff;
     border-radius: 5px;
+    border: 2px solid var(--base2);
+    background-color: rgba(0, 0, 0, 0.75); 
+    font-size: 15px;
 
 }
+
+.directory-menu > button:hover {
+    background-color: rgba(84, 83, 83, 0.9);
+    color: #f8f8f8;
+	font-weight: 700;
+}
+
+
+
+
+
+
+
+
 
 
 /* Footer Styling */
