@@ -27,7 +27,10 @@
                     <span class="slider round"></span>
             </label>
         </div>
-
+        <div id="meetGreetBanner" class="banner" style="display:none;">
+            <p>Join us for the Chamber of Commerce Meet and Greet on Wednesday at 7:00 p.m.!</p>
+            <button onclick="closeBanner()">Close</button>
+          </div>
     </header>
     <nav>
         <button id="menu"></button>
@@ -198,11 +201,11 @@
     <section class="weather-card">
         <h2>Weather in Trumbull, CT</h2>
         <div class="weather-info">
-            <img src="images/weather-icon.webp" alt="Weather Icon" class="weather-icon" width="60" height="50">
-            <p class="weather-condition">Partly Cloudy</p>
-            <p>Current Temperature: <span id="current-temp">40</span>°F</p>
-            <p>Wind Speed: <span id="wind-speed">5</span> mph</p>
-            <p>Wind Chill: <span id="wind-chill">N/A</span></p>
+            <p>Current Temperature: <span id="current-temp"></span></p>
+            <figure id="home-weather">
+                <img id="weather-icon" src="." alt=".">
+                <figcaption></figcaption>
+            </figure>
         </div>
     </section>
     </div>
@@ -224,8 +227,8 @@
             </div>
         </div>
 
-        <p> &copy; <span class="currentYear"></span> | Kaitlyn Kryzanski | WDD230 Commerce Project </p>
-        <p class="lastModified"></p>
+        <p> &copy; <span id="currentYear"></span> | Kaitlyn Kryzanski | WDD230 Commerce Project </p>
+        <p id="lastModified"></p>
 
 
     </footer>

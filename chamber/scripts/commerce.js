@@ -9,37 +9,20 @@ hamButton.addEventListener('click', () => {
 });
 
 
-
-
-
-
+//banner for meet and greet
 document.addEventListener('DOMContentLoaded', function() {
-    const visitMessageElement = document.getElementById('visitMessage'); 
-    const lastVisit = localStorage.getItem('lastVisit');
-    const now = new Date().getTime(); 
-
-    let message = "Welcome! Let us know if you have any questions."; 
-
-    if (lastVisit) {
-        const lastVisitTime = parseInt(lastVisit, 10); 
-        const timeDifference = now - lastVisitTime; 
-        const daysDifference = timeDifference / (1000 * 60 * 60 * 24); 
-
-        if (daysDifference < 1) {
-            message = "Back so soon! Awesome!";
-        } else {
-            const daysRounded = Math.floor(daysDifference); 
-            const dayWord = daysRounded === 1 ? "day" : "days"; 
-            message = `You last visited ${daysRounded} ${dayWord} ago.`;
-        }
+    const today = new Date().getDay();
+    if (today === 1 || today === 2 || today === 3) {
+      document.getElementById("meetGreetBanner").style.display = "block";
     }
+  });
+  
+  function closeBanner() {
+    document.getElementById("meetGreetBanner").style.display = "none";
+  }
 
-    
-    visitMessageElement.textContent = message;
 
-   
-    localStorage.setItem('lastVisit', now.toString()); 
-});
+
 
 
 document.addEventListener("DOMContentLoaded", function() {
