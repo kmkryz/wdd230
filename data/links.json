@@ -129,6 +129,10 @@
     {
         "lesson": "10:",
         "links": [
+            {
+                "url": "https://kmkryz.github.io/wdd230/lesson10/weather.html",
+                "title": "OpenWeatherMap API Test"
+            }
 
 
         ] 
