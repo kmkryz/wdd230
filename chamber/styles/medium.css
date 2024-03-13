@@ -65,12 +65,14 @@
 
 
 
-    #visitMessage, .calendar-section, .demographics-section, .heading-section, .calendar-section, .upcoming-section {
+    #visitMessage, .demographics-section, .heading-section, .upcoming-section {
         background-color: #f2f2f2; 
         font-size: larger;
         padding: 40px;
  
     }
+
+ 
 
     .img-label {
         font-size: larger;
@@ -109,10 +111,6 @@
     }
 
 
-    .mem-slide {
-        flex-direction: row;
-        align-items: center;
-    }
 
     .member-box {
         flex: 0 0 30%; 

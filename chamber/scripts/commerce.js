@@ -25,33 +25,56 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 
-document.addEventListener("DOMContentLoaded", function() {
-    let currentIndex = 0;
-    const slides = document.querySelectorAll('.member-slideshow .mem-slide');
-    const totalSlides = slides.length;
+//Member spotlight, randomly select 2-3 random silver/gold members
 
-    function showSlide(index) {
-        // Hide all slides
-        slides.forEach(slide => slide.style.display = 'none');
 
-        // Show the specified slide
-        slides[index].style.display = 'flex';
+const urlMem = "https://kmkryz.github.io/wdd230/chamber/data/members.json";
+
+async function getMemberData() {
+    const response = await fetch(urlMem);
+    const data = await response.json();
+    filterAndDisplayMembers(data.members);
+
+}
+
+
+    const filterAndDisplayMembers = (members) => {
+        
+        const silverGoldMembers = members.filter(member => member.membershiplevel === 'silver member' || member.membershiplevel === 'gold member');
+
+       
+        const selectedMembers = silverGoldMembers.sort(() => 0.5 - Math.random()).slice(0, Math.floor(Math.random() * 2) + 2);
+
+        
+        const container = document.getElementById('member-spotlight');
+        container.innerHTML = ''; 
+
+        selectedMembers.forEach(member => {
+            const memberHTML = `
+                <div class="member-box">
+                    <img src="${member.img}" alt="${member.name}" class="member-image" width="200" height="200">
+                    <h3>${member.name}</h3>
+                    <p>${member.address}</p>
+                    <p><a href="tel:${member.phonenumber}">${member.phonenumber}</a></p>
+                    <p><a href="${member.websiteurl}" target="_blank">Visit Website</a></p>
+                </div>
+            `;
+
+            
+            container.innerHTML += memberHTML;
+        });
     }
 
-    function nextSlide() {
-        currentIndex = (currentIndex + 1) % totalSlides;
-        showSlide(currentIndex);
-    }
-
-    // Initially show the first slide
-    showSlide(currentIndex);
-
-    // Change slide every 3 seconds
-    setInterval(nextSlide, 10000);
-});
+    getMemberData();
 
 
 
+
+
+
+
+
+//image slideshow
 
 let slideIndex = 0;
 showSlides();
@@ -65,7 +88,7 @@ function showSlides() {
     slideIndex++;
     if (slideIndex > slides.length) {slideIndex = 1}    
     slides[slideIndex-1].style.display = "block";  
-    setTimeout(showSlides, 6000); // Change image every 2 seconds
+    setTimeout(showSlides, 6000); 
 }
 
 

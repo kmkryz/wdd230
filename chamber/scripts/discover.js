@@ -13,6 +13,7 @@ hamButton.addEventListener('click', () => {
 
 
 
+
 document.addEventListener('DOMContentLoaded', function() {
     const visitMessageElement = document.getElementById('visitMessage'); 
     const lastVisit = localStorage.getItem('lastVisit');
