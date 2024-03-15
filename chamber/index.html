@@ -44,10 +44,11 @@
 
 
     <div class="hero-container">
-    
-         <div class="hero-img">
-             <img src="images/compressed-imgs/hero-lake-1.webp" alt="Hero Image" class="hero-image" width="500" height="500">
-         </div>
+        <picture class="hero-img">
+            <source media="(max-width: 500px)" srcset="images/compressed-imgs/hero-small.webp">
+            <source media="(max-width: 1000px)" srcset="images/compressed-imgs/hero-medium.webp">
+            <img src="images/compressed-imgs/hero-lake-1.webp" alt="Hero Image" class="hero-image" width="500" height="500">
+        </picture>
         <div class="hero-text">
             <h2>The support you deserve.</h2>
             <p>Get started today</p>
