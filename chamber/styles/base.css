@@ -173,11 +173,11 @@ input:checked + .slider:before {
 	display: block;
 }
 
-.active::before {
+.navigation a.active::before {
 	content: "| ";
   
 }
-.active::after {
+.navigation a.active::after {
 	content: " |";
   
 }
@@ -268,13 +268,13 @@ footer {
 
 .hero-text p {
     padding-top: 0;
-    font-size: .5em; 
+    font-size: 1em; 
 }
 
 #join {
     background-color: #E4EBFB; 
     color: #353535;
-    padding: 5px 20px; 
+    padding: 10px 20px; 
     margin-bottom: 15px;
     font-size: 0.8em; 
     border: none;
@@ -574,6 +574,7 @@ li {
 }
 .directory-menu > button {
     margin: 10px 30%;
+    padding: 5px;
     color: #fff;
     border-radius: 10px;
     border: 2px solid var(--base2);

@@ -25,6 +25,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 
+
 //Member spotlight, randomly select 2-3 random silver/gold members
 
 

@@ -3,6 +3,7 @@ const cards = document.querySelector('#directory-cards');
 
 
 
+
 document.addEventListener('DOMContentLoaded', function() {
     const directoryCards = document.getElementById('directory-cards');
     const gridButton = document.getElementById('grid');
@@ -21,6 +22,15 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
+
+const hamButton = document.querySelector('#menu');
+const navigation = document.querySelector('.navigation');
+
+
+hamButton.addEventListener('click', () => {
+	navigation.classList.toggle('open');
+	hamButton.classList.toggle('open');
+});
 
 async function getMemberData() {
     const response = await fetch(url);
