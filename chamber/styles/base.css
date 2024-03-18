@@ -257,29 +257,31 @@ footer {
     top: 70%; 
     right: 10%; 
     transform: translate(-50%, -50%);
-    padding: 5px; 
+    padding: 10px; 
 
 }
 
 .hero-text h2 {
     font-size: 1.5em;
+    margin-bottom: 0;
 }
 
 .hero-text p {
+    padding-top: 0;
     font-size: .5em; 
 }
 
-button {
+#join {
     background-color: #E4EBFB; 
     color: #353535;
-    padding: 10px 20px; 
+    padding: 5px 20px; 
     margin-bottom: 15px;
     font-size: 0.8em; 
     border: none;
     cursor: pointer;
 }
 
-button:hover {
+#join:hover {
     background-color: #cfdcf9;
 }
 
@@ -573,10 +575,10 @@ li {
 .directory-menu > button {
     margin: 10px 30%;
     color: #fff;
-    border-radius: 5px;
+    border-radius: 10px;
     border: 2px solid var(--base2);
     background-color: rgba(0, 0, 0, 0.75); 
-    font-size: 15px;
+    font-size: 20px;
 }
 .directory-menu > button:hover {
     background-color: rgba(84, 83, 83, 0.9);
