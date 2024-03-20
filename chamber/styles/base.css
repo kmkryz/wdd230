@@ -498,13 +498,12 @@ main {
     max-width: 1500px;
     width: 100%;
     height: auto;
-    margin-bottom: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .img-label {
-    margin-bottom: 200px;
+    margin-bottom: 100px;
 }
 .main-content img:hover {
     transform: scale(1.03);
@@ -627,13 +626,14 @@ form label.top input, form label.top textarea {
     margin: 2.75rem auto 6.75rem auto;
     border: 2px solid var(--base);
     border-radius: 10px;
-    padding: .5rem 2%;
+    padding-right: 20px;
     color: var(--base);
+   
 }
 
 .membership-benefits h2 {
-    border-bottom: 2px dotted var(--accent1);
     margin-bottom: 40px;
+    padding-left: 20px;
 }
 
 .membership-level {
@@ -714,6 +714,39 @@ textarea:focus {
 
 input::placeholder {
 	font-size: 13px;
+}
+
+.membership-level {
+    margin-bottom: 20px; 
+    padding: 10px 20px 10px 30px; 
+    font-size: large;
+    border: 1px solid #ddd; 
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1); 
+    background-color: #fff ;
+}
+.np, .bronze, .silver, .gold {
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+.np {
+    background-color: var(--base2);
+    color: #fff;
+}
+
+.bronze {
+    background-color: #8c5319;
+    color: #fff;
+}
+
+.silver {
+    background-color: #6f6565;
+    color: #fff;
+}
+
+.gold {
+    background-color: #82722c;
+    color: #fff;
 }
 
 /* ------------------------------- THANK YOU PAGE --------------------------- */

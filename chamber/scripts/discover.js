@@ -65,8 +65,6 @@ document.getElementById('checkbox').addEventListener('change', function(event) {
          document.querySelector('#visitMessage').style.color= "#000"
          document.querySelector('.heading-section').style.backgroundColor= "#c0bcbc";
          document.querySelector('.heading-section').style.color= "#000"
-         document.querySelector('.calendar-section').style.backgroundColor= "#c0bcbc";
-         document.querySelector('.calendar-section').style.color= "#000"
          document.querySelector('.demographics-section').style.backgroundColor= "#c0bcbc";
          document.querySelector('.demographics-section').style.color= "#000"
          document.querySelector('.upcoming-section').style.backgroundColor= "#c0bcbc";
@@ -88,8 +86,6 @@ document.getElementById('checkbox').addEventListener('change', function(event) {
         document.querySelector('#visitMessage').style.color= "#353535"
         document.querySelector('.heading-section').style.backgroundColor= "#f8f8f8";
         document.querySelector('.heading-section').style.color= "#353535"
-        document.querySelector('.calendar-section').style.backgroundColor= "#f8f8f8";
-        document.querySelector('.calendar-section').style.color= "#353535"
         document.querySelector('.demographics-section').style.backgroundColor= "#f8f8f8";
         document.querySelector('.demographics-section').style.color= "#353535"
         document.querySelector('.upcoming-section').style.backgroundColor= "#f8f8f8";
