@@ -35,6 +35,8 @@ async function apiFetch() {
     }
 }
 
+
+
 function displayResults(weatherData, forecastData) {
     currentTemp.innerHTML = `${Math.round(weatherData.main.temp)}°F`;
     const iconsrc = `http://openweathermap.org/img/wn/${weatherData.weather[0].icon}.png`;
@@ -43,15 +45,19 @@ function displayResults(weatherData, forecastData) {
     weatherIcon.setAttribute('alt', desc);
     captionDesc.textContent = desc;
 
-
     let forecastHTML = `<h2>5-Day Forecast:</h2>`;
     for (let i = 0; i < forecastData.list.length; i+=8) { 
         const dayData = forecastData.list[i];
         const dayTemp = Math.round(dayData.main.temp);
         const dayIcon = `http://openweathermap.org/img/wn/${dayData.weather[0].icon}.png`;
         const dayDesc = dayData.weather[0].description;
+        const date = new Date(dayData.dt * 1000);
+        const options = { weekday: 'long' };
+        const dayOfWeek = new Intl.DateTimeFormat('en-US', options).format(date);
+
         forecastHTML += `
-            <div>
+            <div class="forecast-day"> <!-- Added class here -->
+                <b>${dayOfWeek}</b><br>
                 <img src="${dayIcon}" alt="${dayDesc}" style="width:50px;"><br>
                 ${dayTemp}°F<br>
                 ${dayDesc}
@@ -60,5 +66,7 @@ function displayResults(weatherData, forecastData) {
     }
     forecastContainer.innerHTML = forecastHTML;
 }
+
+
 
 apiFetch();
