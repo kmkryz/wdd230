@@ -1,9 +1,15 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-US">
 <head>
     <meta charset="UTF-8">
-    <title>Reservation - Scooter Island Rentals</title>
-    <link rel="stylesheet" href="styles/base.css"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservations - Scoots Rentals</title>
+    <meta name="author" content="Kaitlyn Kryzanski">
+    <meta name="description" content="Reservations Page for Scoots rentals">
+    <link rel="stylesheet" type="text/css" href="styles/base.css">
+    <meta property="og:title" content="Scoots Rentals">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://kmkryz.github.io/wdd230/scoots/reservations.html">
 </head>
 <body>
     <nav>
@@ -17,7 +23,6 @@
         <section class="rental-agreement">
             <h2>Rental Agreement Information</h2>
             <p>Please read our rental agreement before booking a scooter. By submitting this reservation, you agree to the terms and conditions outlined in our rental agreement.</p>
-            <!-- Include more detailed agreement information here -->
         </section>
 
         <section class="reservation-form">
@@ -32,6 +37,7 @@
                     <div>
                         <label for="period">Rental Period: *</label>
                         <select id="period" name="period" required>
+                            <option value=""> - </option>
                             <option value="half-day">Half Day</option>
                             <option value="full-day">Full Day</option>
                             <option value="multiple-days">Multiple Days</option>
@@ -40,13 +46,17 @@
                     <div>
                         <label for="type">Rental Type: *</label>
                         <select id="type" name="type" required>
-                            <option value="standard">Standard Scooter</option>
-                            <option value="electric">Electric Scooter</option>
-                            <option value="deluxe">Deluxe Scooter</option>
+                            <option value=""> - </option>
+                            <option value="Metropolitan">Honda Metropolitan</option>
+                            <option value="Dio">Hona Dio</option>
+                            <option value="PCX150">Honda PCX150</option>
+                            <option value="Pioneer 1000">Honda Pioneer 1000</option>
+                            <option value="4-door">Jeep Wrangler 4-door</option>
+                            <option value="2-door">Jeep Wrangler 2-door</option>
                         </select>
                     </div>
                     <div>
-                        <label for="number">Number of Scooters: *</label>
+                        <label for="number">Number of Vehicles: *</label>
                         <input type="number" id="number" name="number" min="1" required>
                     </div>
                     <div>
@@ -86,6 +96,5 @@
         <p>Follow us on <a href="#">social media</a></p>
     </footer>
 
-    <script src="scripts/reservation.js"></script> <!-- Optional script file -->
 </body>
 </html>

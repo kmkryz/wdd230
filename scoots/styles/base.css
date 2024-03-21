@@ -1,3 +1,10 @@
+:root {
+    --accent1: #007bff;
+    --accent2: #ffdd57;
+
+  }
+
+
 body {
     font-family: 'Arial', sans-serif;
     margin: 0;
@@ -6,33 +13,16 @@ body {
     color: #333;
 }
 
-/* nav {
-    background-color: #007bff;
-    padding: 10px 0;
-    text-align: center;
-}
-
-nav a {
-    color: #ffffff;
-    text-decoration: none;
-    padding: 10px 15px;
-    font-weight: bold;
-}
-
-nav a:hover {
-    background-color: #0056b3;
-    border-radius: 5px;
-} */
 
 a {
-    color: #007bff;
+    color: var(--accent1);
     text-decoration: none;
 }
 
 
 /* Navigation Styles */
 nav {
-    background-color: #007bff;
+    background-color: var(--accent1);
     padding: 10px 0;
     text-align: center;
 }
@@ -49,7 +39,7 @@ nav a:hover {
 }
 
 .closeable-message {
-    background-color: #ffdd57;
+    background-color: var(--accent2);
     color: #333;
     padding: 15px;
     text-align: center;
@@ -99,6 +89,17 @@ header p {
     margin-top: 20px;
 }
 
+#rentals-message {
+    padding: 50px 5%;
+    text-align: center;
+    color: white;
+    background-color: var(--accent1);
+}
+
+#rentals-message h2 {
+    margin-bottom: 30px;
+}
+
 
 #weather {
     background-color: #f8f9fa;
@@ -107,32 +108,30 @@ header p {
 }
 
 footer {
-    background-color: #343a40;
+    background-color: #333;
     color: white;
     padding: 20px;
     text-align: center;
 }
 
 footer a {
-    color: #ffc107;
+    color: var(--accent2);
     text-decoration: none;
 }
 
 
 /* ----------------------------------- RESERVATIONS ---------------------------- */
 
-/* Container for the entire reservations section */
 .reservations-container {
     display: flex;
     flex-direction: column;
     gap: 20px;
     padding: 20px;
-    align-items: center; /* Center the content */
-    max-width: 600px; /* Adjust the max-width for layout consistency */
-    margin: auto; /* Center the container on the page */
+    align-items: center; 
+    max-width: 600px; 
+    margin: auto;
 }
 
-/* Styling for both the agreement and form sections */
 .rental-agreement, .reservation-form {
     background: #f0f0f0;
     padding: 30px; 
@@ -143,6 +142,7 @@ footer a {
 
 
 .form-grid {
+    width: auto;
     display: grid;
     grid-template-columns: 1fr; 
     gap: 20px;
@@ -168,25 +168,24 @@ textarea {
     border: 1px solid #ccc;
     border-radius: 4px;
     background-color: #fff;
-    -webkit-appearance: none; /* Removes default styling on iOS */
+    -webkit-appearance: none; 
     appearance: none;
 }
 
-/* Focus state to improve form usability */
 input:focus,
 select:focus,
 textarea:focus {
-    outline: 2px solid #007bff; /* Clearer focus state */
+    outline: 2px solid var(--accent1); 
     outline-offset: 2px;
 }
 
-/* Comment field styling */
+
 .comment textarea {
-    min-height: 120px; /* Larger textarea for comments */
+    min-height: 120px;
 }
 
 .submit-btn button {
-    background-color: #007bff;
+    background-color: var(--accent1);
     color: #ffffff;
     border: none;
     padding: 10px 20px;
@@ -207,7 +206,7 @@ textarea:focus {
 @media (max-width: 768px) {
     .reservations-container {
         padding: 20px;
-        max-width: 100%; /* Allows the form to be more responsive on smaller screens */
+        max-width: 100%; 
     }
 }
 
@@ -217,7 +216,8 @@ textarea:focus {
 
 /* ------------------------- CONTACT -------------------------- */
 
-.contact h1 {
+.contact {
+    text-align: center;
     margin: 0;
 }
 .map-container {
@@ -227,6 +227,8 @@ textarea:focus {
 }
 .contact-form {
     max-width: 600px;
+    background-color: #ffffff;
+    border-radius: 5px;
     margin: 20px auto;
     padding: 20px 45px 20px 20px;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
@@ -281,7 +283,7 @@ h1 {
 .rental-item h3 {
     text-align: center;
     margin-top: 0;
-    color: #007bff;
+    color: var(--accent1);
 }
 
 .rental-pricing {
@@ -316,11 +318,3 @@ h1 {
     box-shadow: 0 1px 2px rgba(0,0,0,0.05);
 }
 
-#rentals {
-    padding: 50px 5%;
-    text-align: center;
-}
-
-#rentals h2 {
-    margin-bottom: 30px;
-}

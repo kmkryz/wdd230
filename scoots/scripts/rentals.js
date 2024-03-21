@@ -20,6 +20,7 @@ function displayRentals(rentals) {
                 <h3>${option.name} - ${option.capacity}</h3>
                 <div class="rental-pricing">
                     Reservation: Half Day $${option.pricing.reservation.halfDay}, Full Day $${option.pricing.reservation.fullDay}<br>
+                    <br>
                     Walk-In: Half Day $${option.pricing.walkIn.halfDay}, Full Day $${option.pricing.walkIn.fullDay}
                 </div>
             `;
