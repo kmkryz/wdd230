@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soots Home Page</title>
+    <meta name="author" content="Kaitlyn Kryzanski">
+    <meta name="description" content="Home Page for Scoots rentals">
+    <link rel="stylesheet" type="text/css" href="styles/base.css">
+    <meta property="og:title" content="Scoots Rentals">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="">
+
+</head>
+<body>
+    <div id="highTempMessage" class="closeable-message">
+        Today's high temperature: <span id="highTemp"></span>
+        <button onclick="closeHighTempMessage()">Close</button>
+    </div>
+
+    <nav>
+        <a href="#">Home</a>
+        <a href="rentals.html">Rentals</a>
+        <a href="reservations.html">Reservations</a>
+        <a href="contact.html">Contact Us</a>
+    </nav>
+
+    <header>
+        <h1>Welcome to Scooter Island Rentals</h1>
+        <p>Your adventure starts here. <a href="reservations.html">Make a reservation</a> now!</p>
+    </header>
+
+    <section id="rentals">
+        <h2>Our Rentals</h2>
+        <p>Explore the island at your own pace with our variety of scooters.</p>
+        
+    </section>
+
+    <section id="weather">
+        <h2>Weather Information</h2>
+        <p>Current Temperature: <span id="currentTemp"></span></p>
+        <p>Humidity: <span id="humidity"></span></p>
+        <p></p>
+        <p>Tomorrow at 3:00 PM: <span id="nextDayTemp"></span></p>
+        <!-- Weather data will be inserted here via JavaScript -->
+    </section>
+
+    <footer>
+        <p>Contact us at: <a href="mailto:info@scooterislandrentals.com">info@scooterislandrentals.com</a></p>
+        <p>Follow us on <a href="#">social media</a></p>
+    </footer>
+
+    <script src="scripts/weather.js"></script> <!-- Link to your JavaScript file -->
+</body>
+</html>

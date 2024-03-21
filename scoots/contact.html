@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact Us - Scooter Island Rentals</title>
+    <link rel="stylesheet" href="styles/base.css"> 
+</head>
+<body>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="rentals.html">Rentals</a>
+        <a href="reservations.html">Reservations</a>
+        <a href="#">Contact Us</a>
+    </nav>
+
+    <main>
+        <h1>Contact Us</h1>
+        <p>For any inquiries or reservations, please contact us using the information below or fill out the form.</p>
+        
+        <section class="contact-info">
+            <h2>Our Locations</h2>
+            <p><strong>Location 1:</strong> Zona Hotelera Nte., 77613 Cozumel, Q.R., Mexico</p>
+            <p><strong>Location 2:</strong> C. 1 Sur 58, Centro, 77600 Cozumel, Q.R., Mexico</p>
+            <p><strong>Email:</strong> <a href="mailto:info@scooterislandrentals.com">info@scooterislandrentals.com</a></p>
+            <p><strong>Phone:</strong> +1234567789</p>
+        </section>
+        
+        <section class="google-map">
+            <h2>Find Us</h2>
+            <div id="map" class="map-container">
+                <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1Aco99anEow-MhVep_t7N0Z2XqGNNhjE&ehbc=2E312F&noprof=1" width="640" height="480"></iframe>
+            </div>
+        </section>
+        
+        <section class="contact-form">
+            <h2>Send Us a Message</h2>
+            <div class="form-container">
+                <form action="/submit-contact-form" method="POST">
+                    <div>
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div>
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div>
+                        <label for="comment">Comment:</label>
+                        <textarea id="comment" name="comment" required></textarea>
+                    </div>
+                    <div>
+                        <button type="submit">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Contact us at: <a href="mailto:info@scooterislandrentals.com">info@scooterislandrentals.com</a></p>
+        <p>Follow us on <a href="#">social media</a></p>
+    </footer>
+</body>
+</html>

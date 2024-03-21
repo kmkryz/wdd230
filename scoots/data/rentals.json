@@ -1,0 +1,80 @@
+{
+    "rentals": [
+      {
+        "category": "Honda Motor Scooters",
+        "options": [
+          {
+            "name": "Honda Metropolitan (49cc)",
+            "capacity": "1 person",
+            "pricing": {
+              "reservation": {"halfDay": 20, "fullDay": 30},
+              "walkIn": {"halfDay": 25, "fullDay": 35}
+            }
+          },
+          {
+            "name": "Honda Dio (110cc)",
+            "capacity": "2 person",
+            "pricing": {
+              "reservation": {"halfDay": 30, "fullDay": 40},
+              "walkIn": {"halfDay": 35, "fullDay": 45}
+            }
+          },
+          {
+            "name": "Honda PCX150 (149cc)",
+            "capacity": "2 person",
+            "pricing": {
+              "reservation": {"halfDay": 40, "fullDay": 50},
+              "walkIn": {"halfDay": 45, "fullDay": 55}
+            }
+          }
+        ]
+      },
+      {
+        "category": "Side-by-Side ATVs",
+        "options": [
+          {
+            "name": "Honda Pioneer 1000",
+            "capacity": "4 person",
+            "pricing": {
+              "reservation": {"halfDay": 50, "fullDay": 70},
+              "walkIn": {"halfDay": 60, "fullDay": 80}
+            }
+          }
+        ]
+      },
+      {
+        "category": "Jeeps",
+        "options": [
+          {
+            "name": "Jeep Wrangler - 4 door manual with A/C",
+            "capacity": "5 person",
+            "pricing": {
+              "reservation": {"halfDay": 70, "fullDay": 100},
+              "walkIn": {"halfDay": 85, "fullDay": 125}
+            }
+          },
+          {
+            "name": "Jeep Wrangler - 2 door - open air - manual",
+            "capacity": "4 person",
+            "pricing": {
+              "reservation": {"halfDay": 60, "fullDay": 85},
+              "walkIn": {"halfDay": 70, "fullDay": 90}
+            }
+          }
+        ]
+      }
+    ],
+    "agreements": [
+      "A $50 security deposit is required to confirm reservations.",
+      "A valid driver's license is required in hand at the time of rental.",
+      "No one under the age of 12 years of age are allowed to ride on the scooters.",
+      "Fuel charge is not included.",
+      "Unlimited mileage.",
+      "Liability insurance is included.",
+      "Damage insurance is available for purchase.",
+      "Free delivery to Cozumel hotels or Airbnbs for 2+ day rentals.",
+      "Payment via Google Pay, Apple Pay, cash, credit card, debit card, or Venmo.",
+      "Rentals may be returned to either physical location."
+    ]
+  }
+  
