@@ -13,7 +13,7 @@
         <a href="#">Contact Us</a>
     </nav>
 
-    <main>
+    <main class="contact">
         <h1>Contact Us</h1>
         <p>For any inquiries or reservations, please contact us using the information below or fill out the form.</p>
         
@@ -34,22 +34,22 @@
         
         <section class="contact-form">
             <h2>Send Us a Message</h2>
-            <div class="form-container">
+            <div class="contact-info">
                 <form action="/submit-contact-form" method="POST">
                     <div>
-                        <label for="name">Name:</label>
+                        <label class="contact-name" for="name">Name:</label>
                         <input type="text" id="name" name="name" required>
                     </div>
                     <div>
-                        <label for="email">Email:</label>
+                        <label class="contact-email" for="email">Email:</label>
                         <input type="email" id="email" name="email" required>
                     </div>
                     <div>
-                        <label for="comment">Comment:</label>
+                        <label class="contact-comment" for="comment">Comment:</label>
                         <textarea id="comment" name="comment" required></textarea>
                     </div>
                     <div>
-                        <button type="submit">Submit</button>
+                        <button class="contact-submit" type="submit">Submit</button>
                     </div>
                 </form>
             </div>
