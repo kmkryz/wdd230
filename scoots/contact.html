@@ -3,20 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact - Scoots Rentals</title>
+    <title>Contact</title>
     <meta name="author" content="Kaitlyn Kryzanski">
     <meta name="description" content="Contact Page for Scoots rentals">
     <link rel="stylesheet" type="text/css" href="styles/base.css">
+    <link rel="icon" href="images/favicon_io/favicon.ico">
     <meta property="og:title" content="Scoots Rentals">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://kmkryz.github.io/wdd230/scoots/contact.html">
 </head>
 <body>
     <nav>
+        <button id="menu"></button>
         <a href="index.html">Home</a>
         <a href="rentals.html">Rentals</a>
         <a href="reservations.html">Reservations</a>
-        <a href="#">Contact Us</a>
+        <a href="#" class="active">Contact Us</a>
     </nav>
 
     <main class="contact">
@@ -40,18 +42,18 @@
         
         <section class="contact-form">
             <h2>Send Us a Message</h2>
-            <div class="contact-info">
+            <div id="contact-info">
                 <form action="/submit-contact-form" method="POST">
                     <div>
-                        <label class="contact-name" for="name">Name:</label>
+                        <label id="contact-name" for="name">Name:</label>
                         <input type="text" id="name" name="name" required>
                     </div>
                     <div>
-                        <label class="contact-email" for="email">Email:</label>
+                        <label id="contact-email" for="email">Email:</label>
                         <input type="email" id="email" name="email" required>
                     </div>
                     <div>
-                        <label class="contact-comment" for="comment">Comment:</label>
+                        <label id="contact-comment" for="comment">Comment:</label>
                         <textarea id="comment" name="comment" required></textarea>
                     </div>
                     <div>
@@ -66,5 +68,6 @@
         <p>Contact us at: <a href="mailto:info@scooterislandrentals.com">info@scooterislandrentals.com</a></p>
         <p>Follow us on <a href="#">social media</a></p>
     </footer>
+    <script src="scripts/menu.js"></script>
 </body>
 </html>

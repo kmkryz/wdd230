@@ -1,6 +1,9 @@
 :root {
     --accent1: #007bff;
     --accent2: #ffdd57;
+    --accent3: rgb(244, 246, 249);
+    --accent4: rgb(0, 123, 255, .25);
+    --text: #333;
 
   }
 
@@ -21,9 +24,72 @@ a {
 
 
 /* Navigation Styles */
+#menu {
+    display: none; 
+    background-color: var(--accent1); 
+    color: white;
+    border: 1px solid var(--text);
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px; 
+}
+
+#menu:before {
+    content: '\2630';
+    display: block;
+}
+
+
+nav a {
+    display: inline-block; 
+    margin: 0 10px; 
+    color: var(--accent1); 
+    text-decoration: none;
+}
+
+nav a.active {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+
+@media screen and (max-width: 768px) {
+    #menu {
+        display: block; 
+        position: fixed; 
+        top: 10px;
+        right: 10px; 
+        z-index: 1000; 
+    }
+
+
+    nav a {
+        display: none;
+    }
+
+
+    nav.active a {
+        display: block;
+        margin: 10px 0; 
+        text-align: center;
+    }
+
+
+    nav.active {
+        position: absolute;
+        background-color: var(--accent1); 
+        top: 0;
+        left: 0;
+        width: 100%;
+        box-shadow: 0 4px 5px rgba(0,0,0,0.2);
+        z-index: 999; 
+    }
+}
+
+
 nav {
     background-color: var(--accent1);
-    padding: 10px 0;
     text-align: center;
 }
 
@@ -100,11 +166,16 @@ header p {
     margin-bottom: 30px;
 }
 
-
 #weather {
-    background-color: #f8f9fa;
-    padding: 50px 5%;
     text-align: center;
+}
+
+#current-weather, #tom-weather {
+    background-color: var(--accent4);
+    margin: 50px 5%;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 1rem rgba(51, 51, 51, 0.25);
 }
 
 footer {
@@ -133,7 +204,7 @@ footer a {
 }
 
 .rental-agreement, .reservation-form {
-    background: #f0f0f0;
+    background: var(--accent4);
     padding: 30px; 
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
@@ -227,12 +298,18 @@ textarea:focus {
 }
 .contact-form {
     max-width: 600px;
-    background-color: #ffffff;
+    text-align: left;
+    background-color: var(--accent4);
     border-radius: 5px;
     margin: 20px auto;
     padding: 20px 45px 20px 20px;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
+
+.contact-form h2 {
+    text-align: center;
+}
+
 form div {
     margin-bottom: 10px;
 }
@@ -243,6 +320,7 @@ form label, form input, form textarea, form button {
 form textarea {
     height: 100px;
 }
+
 
 .contact-submit {
     margin-left: 10px;

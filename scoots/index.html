@@ -2,10 +2,11 @@
 <html lang="en-US">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Soots Home Page</title>
+    <title>Scoot's Rentals Home</title>
     <meta name="author" content="Kaitlyn Kryzanski">
     <meta name="description" content="Home Page for Scoots rentals">
     <link rel="stylesheet" type="text/css" href="styles/base.css">
+    <link rel="icon" href="images/favicon_io/favicon.ico">
     <meta property="og:title" content="Scoots Rentals">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://kmkryz.github.io/wdd230/scoots/index.html">
@@ -18,7 +19,8 @@
     </div>
 
     <nav>
-        <a href="#">Home</a>
+        <button id="menu"></button>
+        <a href="#" class="active">Home</a>
         <a href="rentals.html">Rentals</a>
         <a href="reservations.html">Reservations</a>
         <a href="contact.html">Contact Us</a>
@@ -26,7 +28,7 @@
 
     <header>
         <div id="herolabel">
-            <h1>Welcome to Scooter Island Rentals</h1>
+            <h1>Welcome to Scoot's Island Rentals</h1>
             <p>Your adventure starts here. <a href="reservations.html">Make a reservation</a> now!</p>
         </div>
     </header>
@@ -39,12 +41,15 @@
 
     <section id="weather">
         <h2>Weather Information</h2>
-        <p>Current Temperature: <span id="currentTemp"></span></p>
-        <p>Humidity: <span id="humidity"></span></p>
-        <p></p>
-        <p>Tomorrow at 3:00 PM: <span id="nextDayTemp"></span></p>
-
+        <div id="current-weather">
+            <p>Current Temperature: <span id="currentTemp"></span> <span id="currentCondition"></span></p>
+            <p>Humidity: <span id="humidity"></span></p>
+        </div>
+        <div id="tom-weather">
+            <p>Tomorrow at 3:00 PM: <span id="nextDayTemp"></span> <span id="nextDayCondition"></span></p>
+        </div>
     </section>
+
 
     <footer>
         <p>Contact us at: <a href="mailto:info@scooterislandrentals.com">info@scooterislandrentals.com</a></p>
@@ -52,4 +57,5 @@
     </footer>
 
     <script src="scripts/weather.js"></script>
+    <script src="scripts/menu.js"></script>
 </html>
