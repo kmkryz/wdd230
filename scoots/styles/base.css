@@ -96,6 +96,7 @@ nav a {
     color: white;
     margin: 0 15px;
     padding: 10px 20px;
+    font-size: 20px;
 }
 
 nav a:hover {
@@ -103,24 +104,46 @@ nav a:hover {
     border-radius: 5px;
 }
 
+
+
 .closeable-message {
     background-color: var(--accent2);
-    color: #333;
+    color: var(--text);
     padding: 20px;
     text-align: center;
     position: relative;
+    font-size: 20px;
 }
 
 .closeable-message button {
     position: absolute;
-    left: 20px;
+    right: 20px;
     top: 50%;
     transform: translateY(-50%);
     border: none;
     background-color: transparent;
     font-size: 20px;
     cursor: pointer;
+    text-decoration: underline;
 }
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+    .closeable-message button {
+        position: static; 
+        transform: none; 
+        display: block; 
+        margin: 20px auto 0; 
+        top: auto; 
+        right: auto; 
+
+    }
+   
+    .closeable-message {
+        padding-bottom: 20px; 
+    }
+}
+
 
 header {
     background-image: url('../images/Hero.webp');
@@ -130,7 +153,10 @@ header {
     padding: 120px 50px;
     text-align: center;
     position: relative;
+    font-size: large;
 }
+
+
 
 #herolabel {
     position: relative;
@@ -159,6 +185,7 @@ header p {
     text-align: center;
     color: white;
     background-color: var(--accent1);
+    font-size: large;
 }
 
 #rentals-message h2 {
@@ -166,7 +193,9 @@ header p {
 }
 
 #weather {
+    margin-top: 20px;
     text-align: center;
+    font-size: large;
 }
 
 #current-weather, #tom-weather {
@@ -182,6 +211,7 @@ footer {
     color: white;
     padding: 20px;
     text-align: center;
+    font-size: large;
 }
 
 footer a {
@@ -200,6 +230,7 @@ footer a {
     align-items: center; 
     max-width: 600px; 
     margin: auto;
+    font-size: large;
 }
 
 .rental-agreement, .reservation-form {
@@ -207,7 +238,7 @@ footer a {
     padding: 30px; 
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
-    width: 100%; 
+    width: auto; 
 }
 
 
@@ -262,7 +293,7 @@ textarea:focus {
     color: #ffffff;
     border: none;
     padding: 10px 20px;
-    font-size: 16px;
+    font-size: 20px;
     border-radius: 4px;
     cursor: pointer;
     transition: background-color 0.2s;
@@ -292,6 +323,7 @@ textarea:focus {
 .contact {
     text-align: center;
     margin: 0;
+    font-size: large;
 }
 .map-container {
     height: 400px;
@@ -318,6 +350,7 @@ form div {
 form label, form input, form textarea, form button {
     width: 100%;
     padding: 10px;
+    font-size: large;
 }
 form textarea {
     height: 100px;
@@ -336,6 +369,7 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
+    font-size: large;
 }
 
 h1 {

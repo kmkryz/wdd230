@@ -9,7 +9,8 @@
             "pricing": {
               "reservation": {"halfDay": 20, "fullDay": 30},
               "walkIn": {"halfDay": 25, "fullDay": 35}
-            }
+            },
+            "img": "/images/pioneer-1000"
           },
           {
             "name": "Honda Dio (110cc)",
