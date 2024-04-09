@@ -8,27 +8,6 @@ document.addEventListener('DOMContentLoaded', function() {
         .catch(error => console.error('Failed to load rental data:', error));
 });
 
-// function displayRentals(rentals) {
-//     const container = document.getElementById('rentalsContainer');
-//     rentals.forEach(category => {
-//         const section = document.createElement('section');
-//         section.innerHTML = `<h2>${category.category}</h2>`;
-//         category.options.forEach(option => {
-//             const item = document.createElement('div');
-//             item.className = 'rental-item';
-//             item.innerHTML = `
-//                 <h3>${option.name} - ${option.capacity}</h3>
-//                 <div class="rental-pricing">
-//                     Reservation: Half Day $${option.pricing.reservation.halfDay}, Full Day $${option.pricing.reservation.fullDay}<br>
-//                     <br>
-//                     Walk-In: Half Day $${option.pricing.walkIn.halfDay}, Full Day $${option.pricing.walkIn.fullDay}
-//                 </div>
-//             `;
-//             section.appendChild(item);
-//         });
-//         container.appendChild(section);
-//     });
-// }
 
 function displayRentals(rentals) {
     const container = document.getElementById('rentalsContainer');
@@ -38,8 +17,8 @@ function displayRentals(rentals) {
         category.options.forEach(option => {
             const item = document.createElement('div');
             item.className = 'rental-item';
-            // Check if an image path is provided and include it in the HTML
-            const imageHTML = option.image ? `<img src="${option.image}" alt="${option.name}" style="max-width: 100%; height: auto;">` : '';
+            
+            const imageHTML = option.img ? `<img src="${option.img}" alt="${option.name} loading= "lazy" style="width: 200px; height: auto;">` : '';
             item.innerHTML = `
                 ${imageHTML}
                 <h3>${option.name} - ${option.capacity}</h3>

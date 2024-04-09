@@ -10,7 +10,7 @@
               "reservation": {"halfDay": 20, "fullDay": 30},
               "walkIn": {"halfDay": 25, "fullDay": 35}
             },
-            "img": "/images/pioneer-1000"
+            "img": "images/metro.webp"
           },
           {
             "name": "Honda Dio (110cc)",
@@ -18,7 +18,8 @@
             "pricing": {
               "reservation": {"halfDay": 30, "fullDay": 40},
               "walkIn": {"halfDay": 35, "fullDay": 45}
-            }
+            },
+            "img": "images/dio.webp"
           },
           {
             "name": "Honda PCX150 (149cc)",
@@ -26,7 +27,8 @@
             "pricing": {
               "reservation": {"halfDay": 40, "fullDay": 50},
               "walkIn": {"halfDay": 45, "fullDay": 55}
-            }
+            },
+            "img": "images/pcx150.webp"
           }
         ]
       },
@@ -39,7 +41,8 @@
             "pricing": {
               "reservation": {"halfDay": 50, "fullDay": 70},
               "walkIn": {"halfDay": 60, "fullDay": 80}
-            }
+            },
+            "img": "images/pioneer-1000.webp"
           }
         ]
       },
@@ -52,7 +55,8 @@
             "pricing": {
               "reservation": {"halfDay": 70, "fullDay": 100},
               "walkIn": {"halfDay": 85, "fullDay": 125}
-            }
+            },
+            "img": "images/4-door.webp"
           },
           {
             "name": "Jeep Wrangler - 2 door - open air - manual",
@@ -60,7 +64,8 @@
             "pricing": {
               "reservation": {"halfDay": 60, "fullDay": 85},
               "walkIn": {"halfDay": 70, "fullDay": 90}
-            }
+            },
+            "img": "images/2-door.webp"
           }
         ]
       }
