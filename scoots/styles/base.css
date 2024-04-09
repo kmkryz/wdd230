@@ -1,8 +1,9 @@
 :root {
-    --accent1: #007bff;
+    --accent1:#004fa4;
     --accent2: #ffdd57;
     --accent3: rgb(244, 246, 249);
     --accent4: rgb(0, 123, 255, .25);
+    --accent5: #007bffb9;
     --text: #333;
 
   }
@@ -13,22 +14,22 @@ body {
     margin: 0;
     padding: 0;
     background-color: #f5f5f5;
-    color: #333;
+    color: var(--text);
 }
 
 
 a {
     color: var(--accent1);
-    text-decoration: none;
+    text-decoration: underline;
 }
 
 
 /* Navigation Styles */
 #menu {
     display: none; 
-    background-color: var(--accent1); 
-    color: white;
-    border: 1px solid var(--text);
+    background-color: var(--accent5); 
+    color: var(--text);
+    border: 1px solid var(--accent1);
     padding: 10px 20px;
     font-size: 16px;
     cursor: pointer;
@@ -44,7 +45,6 @@ a {
 nav a {
     display: inline-block; 
     margin: 0 10px; 
-    color: var(--accent1); 
     text-decoration: none;
 }
 
@@ -78,7 +78,6 @@ nav a.active {
 
     nav.active {
         position: absolute;
-        background-color: var(--accent1); 
         top: 0;
         left: 0;
         width: 100%;
@@ -100,21 +99,21 @@ nav a {
 }
 
 nav a:hover {
-    background-color: #0056b3;
+    background-color: var(--accent5);
     border-radius: 5px;
 }
 
 .closeable-message {
     background-color: var(--accent2);
     color: #333;
-    padding: 15px;
+    padding: 20px;
     text-align: center;
     position: relative;
 }
 
 .closeable-message button {
     position: absolute;
-    right: 20px;
+    left: 20px;
     top: 50%;
     transform: translateY(-50%);
     border: none;
@@ -179,7 +178,7 @@ header p {
 }
 
 footer {
-    background-color: #333;
+    background-color: var(--text);
     color: white;
     padding: 20px;
     text-align: center;
@@ -216,15 +215,18 @@ footer a {
     width: auto;
     display: grid;
     grid-template-columns: 1fr; 
-    gap: 20px;
+    gap: 30px;
     padding-right: 20px;
 }
 
 
 .form-grid label {
     font-weight: 600;
-    margin-bottom: 8px;
+    margin-top: 20px;
     color: #333;
+}
+.form-grid input {
+    margin-bottom: 20px;
 }
 
 
@@ -328,6 +330,7 @@ form textarea {
 
 
 /* ------------------------ RENTALS ------------------------- */
+
 main {
     padding: 20px 40px 20px 20px;
     display: flex;
@@ -396,3 +399,12 @@ h1 {
     box-shadow: 0 1px 2px rgba(0,0,0,0.05);
 }
 
+/* ----------------------- ATTRIBUTION CONTENT ----------------------- */
+
+.attribution-content li {
+    margin: 10px;
+}
+
+.thankyou-content {
+    text-align: center;
+}

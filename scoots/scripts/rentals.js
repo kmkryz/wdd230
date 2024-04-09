@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function() {
-    fetch('data/rentals.json') // Adjust the path to where your JSON file is stored
+    fetch('data/rentals.json') 
         .then(response => response.json())
         .then(data => {
             displayRentals(data.rentals);

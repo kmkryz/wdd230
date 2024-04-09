@@ -11,10 +11,12 @@
     <meta property="og:title" content="Scoots Rentals">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://kmkryz.github.io/wdd230/scoots/contact.html">
+    <meta property="og:description" content="This is the contact page for the company Scoot's Rentals. This page allows customers to contact our company.">
+    <meta property="og:image" content="https://destinationlesstravel.com/wp-content/uploads/2022/06/Views-from-Celarain-Lighthouse-on-Punta-Sur-Eco-Beach-Park-Cozumel-Mexico.jpg.webp">
 </head>
 <body>
     <nav>
-        <button id="menu"></button>
+        <button id="menu" aria-label="Menu Button"></button>
         <a href="index.html">Home</a>
         <a href="rentals.html">Rentals</a>
         <a href="reservations.html">Reservations</a>
@@ -23,7 +25,7 @@
 
     <main class="contact">
         <h1>Contact Us</h1>
-        <p>For any inquiries or reservations, please contact us using the information below or fill out the form.</p>
+        <p>For any inquiries or reservations, please contact us using the information below or by filling out the form.</p>
         
         <section class="contact-info">
             <h2>Our Locations</h2>
@@ -43,18 +45,18 @@
         <section class="contact-form">
             <h2>Send Us a Message</h2>
             <div id="contact-info">
-                <form action="/submit-contact-form" method="POST">
+                <form>
                     <div>
                         <label id="contact-name" for="name">Name:</label>
-                        <input type="text" id="name" name="name" required>
+                        <input type="text" id="name" name="name" title="Enter your name" required>
                     </div>
                     <div>
                         <label id="contact-email" for="email">Email:</label>
-                        <input type="email" id="email" name="email" required>
+                        <input type="email" id="email" name="email" title="Enter your email" required>
                     </div>
                     <div>
                         <label id="contact-comment" for="comment">Comment:</label>
-                        <textarea id="comment" name="comment" required></textarea>
+                        <textarea id="comment" name="comment" title="Enter a comment" required></textarea>
                     </div>
                     <div>
                         <button class="contact-submit" type="submit">Submit</button>
@@ -66,7 +68,8 @@
 
     <footer>
         <p>Contact us at: <a href="mailto:info@scooterislandrentals.com">info@scooterislandrentals.com</a></p>
-        <p>Follow us on <a href="#">social media</a></p>
+        <p>Follow us on <a href="https://www.instagram.com" target="_blank">social media</a></p>
+        <a href="attributions.html">Attributions Page</a>
     </footer>
     <script src="scripts/menu.js"></script>
 </body>
