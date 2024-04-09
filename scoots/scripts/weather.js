@@ -20,7 +20,6 @@ function fetchCurrentWeather() {
 
             
             data.weather.forEach(condition => {
-                const weatherContainer = document.getElementById('weather');
                 const iconUrl = `http://openweathermap.org/img/wn/${condition.icon}.png`;
                 document.getElementById('currentCondition').innerHTML= `<br><img src="${iconUrl}" alt="${condition.description}" title="${condition.main}"><p>${condition.main} - ${condition.description}</p>`;
             });
@@ -47,7 +46,6 @@ function fetchForecastWeather() {
             if (forecast) {
             
                 forecast.weather.forEach(condition => {
-                    const forecastContainer = document.getElementById('weather');
                     const iconUrl = `http://openweathermap.org/img/wn/${condition.icon}.png`;
                     document.getElementById('nextDayCondition').innerHTML= `<br><br><img src="${iconUrl}" alt="${condition.description}" title="${condition.main}"><p>${condition.main} - ${condition.description}</p>`;
                     document.getElementById('nextDayTemp').textContent = `${Math.round(forecast.main.temp)}°F`;
